@@ -230,6 +230,7 @@ img {
     display: table-cell;
     text-align: right;
     padding-right: 1.728em;
+    width :33.3333333333333%;
   }
   .p1 {
     display: table-cell;
@@ -245,6 +246,7 @@ img {
     display: table-cell;
     text-align: right;
     padding-right: 1.728em;
+    width :33.3333333333333%;
   }
   .p2 {
     display: table-cell;
