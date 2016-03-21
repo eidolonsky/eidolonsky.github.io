@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
+
+/* Base Style */	
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom site styles */
+/* Using Minor Third Modular Scale: http://www.modularscale.com/?18&px&1.2&web&text */
+/* text */
+body {
+  color: #000000;
+  background-color: #FFFFFF;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em; /* 19.2px / 16px */
+  line-height: 1.44em; /* 28.8px / 20px */
+  text-size-adjust: 100%;
+}
+
+p {
+  padding-left: 1.2em; /* 5:6 */
+  padding-right: 1.2em; /* 1/2 ratio */
+  padding-bottom: 1.44em;
+}
+
+h1 {
+  color: #000000;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.728em; /* 34.56px / 20px */
+  line-height: 1.6666666666667em; /* 28.8px * 2 / 34.56px */
+  padding-bottom: 0em; /* Closer */
+  padding-left: 0.75em; 
+  text-size-adjust: 100%;
+}
+
+h2 {
+  color: #000000;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.44em; /* 28.8px / 20px */
+  line-height: 1.728em; /* 34.56px / 20px */
+  padding-left: 0.75em; 
+  text-size-adjust: 100%;
+}
+
+h3 {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.2em; /* 19.2px / 16px */
+  line-height: 1.44em; /* 28.8px / 20px */
+}
+
+/* link setting */
+/* unvisited link */
+a:link {
+  color: #e05038;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #963019;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f2cbbc;
+  text-decoration: underline
+}
+
+/* selected link */
+a:active {
+  color: #e05038;
+  text-decoration: underline
+}
+
+/* media */
+img {
+  display: block;
+}
+
+@media screen and (max-width: 50em) {
+
+  .img1 {
+    width: 4.2em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 50%;
+  }  
+  .img2 {
+    width: 30%;
+    height: 18.75%; /*16:10*/
+  }
+    /* flexbox */
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.44em;
+    padding-bottom: 0;
+  }
+  .name {
+    font-size: 75%;
+    padding-top: 0.48em;
+  }
+  .buttons {
+    width: 100%;
+    font-size: 50%;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.2em;
+    border-bottom: 0.1em solid #000000;
+  }
+  .row2 {
+    padding-top: 1.2em;
+    padding-right: 0;
+    padding-bottom: 1.44em;
+    display: flex;
+    justify-content: space-around;
+  }
+      /*table style/set column */
+  .row3 {
+    display: flex;
+    flex-direction:column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .head1 {
+    text-align: left;
+    font-size: 1em;
+  }
+  .row4 {
+    display: flex;
+    flex-direction:column;
+  }
+  .head2 {
+    text-align: left;
+    font-size: 1em;
+  }
+} 
+
+@media screen and (min-width: 50em) {
+
+  .img1 {
+    width: 8.4em;
+    border-style: solid;
+    border-width: 0.24em;
+    border-radius: 50%;
+  }  
+  .img2 {
+    width: 30%;
+    display: block;
+    height: 18.75%; /*16:10*/
+    max-width: 100%;
+  }
+
+  /* Flexbox style */
+  .row1 {
+    padding-top:1.2em;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+    padding-bottom: 1.2em;
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .name {
+    font-size: 1.44em;
+    padding-left: 1.2em;
+    vertical-align: bottom;
+  }
+  .buttons {
+    font-size: 0.8em;
+    width: 33.3333333%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    padding-top: 1.44em;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid #000000;
+  }
+  .row2 {
+    padding-top: 1.44em;
+    padding-right: 1.2em;
+    padding-bottom: 1.44em;
+    display: flex;
+    justify-content: space-around;
+  }
+    /*table style/set column */
+  .row3 {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+  }
+  .head1 {
+    display: table-cell;
+    text-align: right;
+    padding-right: 1.728em;
+  }
+  .p1 {
+    display: table-cell;
+    width: 66.6666666666666%;
+    padding-right: 12em;
+  }
+  .row4 {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+  }
+  .head2 {
+    display: table-cell;
+    text-align: right;
+    padding-right: 1.728em;
+  }
+  .p2 {
+    display: table-cell;
+    width: 66.6666666666666%;
+    padding-right: 12em;
+  }
+}
