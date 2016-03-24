@@ -38,46 +38,41 @@ table {
 }
 
 /* Custom site styles */
-/* Using Minor Third Modular Scale: http://www.modularscale.com/?18&px&1.2&web&text */
 /* text */
 body {
   color: #000000;
   background-color: #FFFFFF;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 1.2em; /* 19.2px / 16px */
-  line-height: 1.44em; /* 28.8px / 20px */
+  font-size: 1.2em; 
+  line-height: 1.44em; 
   text-size-adjust: 100%;
 }
 
 p {
-  padding-left: 1.2em; /* 5:6 */
-  padding-right: 1.2em; /* 1/2 ratio */
+  line-height: 1.2em;
   padding-bottom: 1.44em;
 }
 
 h1 {
   color: #000000;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 1.728em; /* 34.56px / 20px */
-  line-height: 1.6666666666667em; /* 28.8px * 2 / 34.56px */
-  padding-bottom: 0em; /* Closer */
-  padding-left: 0.75em; 
+  font-size: 1.44em; 
+  line-height: 1.2em;
   text-size-adjust: 100%;
 }
 
 h2 {
   color: #000000;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 1.44em; /* 28.8px / 20px */
-  line-height: 1.728em; /* 34.56px / 20px */
-  padding-left: 0.75em; 
+  font-size: 1.728em; 
+  line-height: 2.0736em; 
   text-size-adjust: 100%;
 }
 
 h3 {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 1.2em; /* 19.2px / 16px */
-  line-height: 1.44em; /* 28.8px / 20px */
+  font-size: 1.44em; 
+  line-height: 1.728em; 
 }
 
 /* link setting */
@@ -128,18 +123,19 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 1.44em;
-    padding-bottom: 0;
   }
   .name {
     font-size: 75%;
-    padding-top: 0.48em;
   }
-  
+  .nav {
+    width: 100%;
+    font-size: 50%;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.1em solid #000000;
+  }
   .photos {
-    padding-top: 1.2em;
-    padding-right: 0;
-    padding-bottom: 1.44em;
     display: flex;
     justify-content: space-around;
   }
@@ -181,59 +177,62 @@ img {
 
   /* Flexbox style */
   .navigation {
-    padding-top:1.2em;
-    padding-right: 1.2em;
-    padding-left: 1.2em;
-    padding-bottom: 1.2em;
+  	background-color: pink;
     position: static;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
   }
   .name {
-    font-size: 1.44em;
-    padding-left: 1.2em;
+  	background-color: green;
     vertical-align: bottom;
   }
-  
+  .nav {
+  	background-color: grey;
+  	margin-left: auto;
+  }
+  .nav li {
+    display: inline-block;
+  }
+
   .photos {
-    padding-top: 1.44em;
-    padding-right: 1.2em;
-    padding-bottom: 1.44em;
+  	background-color: brown;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
     /*table style/set column */
   .aboutme {
+  	background-color: yellow;
     display:table;
     width:100%;
     table-layout:fixed;
   }
   .head1 {
+  	background-color: red;
     display: table-cell;
     text-align: right;
-    padding-right: 1.728em;
-    width :33.3333333333333%;
+    width :35%;
   }
   .p1 {
+  	background-color: grey;
     display: table-cell;
-    width: 66.6666666666666%;
-    padding-right: 12em;
+    width: 65%;
   }
   .ambitions {
+  	background-color: blue;
     display:table;
     width:100%;
     table-layout:fixed;
   }
   .head2 {
+  	background-color: pink;
     display: table-cell;
     text-align: right;
-    padding-right: 1.728em;
-    width :33.3333333333333%;
+    width :35%;
   }
   .p2 {
+  	background-color: brown;
     display: table-cell;
-    width: 66.6666666666666%;
-    padding-right: 12em;
+    width: 65%;
   }
 }
