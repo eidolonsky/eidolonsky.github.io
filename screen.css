@@ -136,6 +136,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 0.666em;
     padding-bottom: 0.333em;
   }
   .name {
