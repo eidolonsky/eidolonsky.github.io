@@ -105,7 +105,7 @@ img {
   display: block;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 35em) {
 
   .img1 {
     width: 4.2em;
@@ -160,7 +160,7 @@ img {
   }
 } 
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 35em) {
 
   .img1 {
     width: 8.4em;
@@ -168,6 +168,7 @@ img {
     border-width: 0.24em;
     border-radius: 50%;
   }  
+
   .img2 {
     width: 30%;
     display: block;
@@ -177,18 +178,19 @@ img {
 
   /* Flexbox style */
   .navigation {
-  	background-color: pink;
     position: static;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    padding-top: 1.333em;
+    padding-bottom: 1.333em;
+    padding-left: 1.777em;
+    padding-right:1.777em;
   }
   .name {
-  	background-color: green;
     vertical-align: bottom;
   }
   .nav {
-  	background-color: grey;
   	margin-left: auto;
   }
   .nav li {
@@ -196,43 +198,47 @@ img {
   }
 
   .photos {
-  	background-color: brown;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1.333em;
+    padding-left: 1.777em;
+    padding-right:1.777em;
   }
     /*table style/set column */
   .aboutme {
-  	background-color: yellow;
     display:table;
     width:100%;
     table-layout:fixed;
   }
   .head1 {
-  	background-color: red;
     display: table-cell;
     text-align: right;
-    width :35%;
+    width :33.3333333333%;
+    padding-left: 1.777em;
+    padding-right:1.777em;
   }
   .p1 {
-  	background-color: grey;
     display: table-cell;
-    width: 65%;
+    width: 66.6666666667%;
+    padding-right:3.554em;
+    padding-left: 1.777em;
   }
   .ambitions {
-  	background-color: blue;
     display:table;
     width:100%;
     table-layout:fixed;
   }
   .head2 {
-  	background-color: pink;
     display: table-cell;
     text-align: right;
-    width :35%;
+    width :33.3333333333%;
+    padding-left: 1.777em;
+    padding-right:1.777em;
   }
   .p2 {
-  	background-color: brown;
     display: table-cell;
-    width: 65%;
+    width: 66.6666666667%;
+    padding-right:3.554em;
+    padding-left: 1.777em;
   }
 }
