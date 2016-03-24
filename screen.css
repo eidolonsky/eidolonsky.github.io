@@ -135,15 +135,7 @@ img {
     font-size: 75%;
     padding-top: 0.48em;
   }
-  .buttons {
-    width: 100%;
-    font-size: 50%;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1.2em;
-    border-bottom: 0.1em solid #000000;
-  }
+  
   .photos {
     padding-top: 1.2em;
     padding-right: 0;
@@ -203,16 +195,7 @@ img {
     padding-left: 1.2em;
     vertical-align: bottom;
   }
-  .buttons {
-    font-size: 0.8em;
-    width: 33.3333333%;
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    padding-top: 1.44em;
-    padding-bottom: 0.2em;
-    border-bottom: 0.1em solid #000000;
-  }
+  
   .photos {
     padding-top: 1.44em;
     padding-right: 1.2em;
