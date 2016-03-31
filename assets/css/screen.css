@@ -206,6 +206,16 @@ img {
 } 
 
 @media screen and (min-width: 35em) {
+  .bgphoto {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
   .img1 {
     width: 8.4em;
@@ -317,5 +327,13 @@ img {
     width: 66.6666666667%;
     padding-right:3.554em;
     padding-left: 1.777em;
+  }
+  
+  body {
+    background-image: url(assets/img/IMG1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 }
