@@ -206,15 +206,8 @@ img {
 } 
 
 @media screen and (min-width: 35em) {
-  .bgphoto {
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  .nav {
+    padding-top: 0.666em;
   }
 
   .img1 {
