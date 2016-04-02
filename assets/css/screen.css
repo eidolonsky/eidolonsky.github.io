@@ -207,7 +207,18 @@ img {
 
 @media screen and (min-width: 35em) {
   .nav {
-    padding-top: 0.666em;
+    padding-top: 1.333em;
+  }
+
+  .bgi {
+    z-index: -1;
+    
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .img1 {
@@ -258,13 +269,12 @@ img {
     padding-left: 0.333em;
   }
   li a:link {
-    color: #1985A1;
-    background-color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 0.333em 0.333em;
   }
   li a:visited {
-    color: #1985A1;
+    color: #FFFFFF;
     text-decoration: none;
   }
   li a:hover {
