@@ -107,6 +107,35 @@ img {
 }
 
 @media screen and (max-width: 35em) {
+  /*home start*/
+  .bgi {
+    z-index: -2;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .logo {
+    z-index: -1;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  .namelogo {
+    width: 10em;
+  }
+  .cnamelogo {
+    width: 6em;
+  }
+  /*home end*/
   h2 {
     padding-top: 0.666em;
     padding-left: 0.333em;
@@ -131,7 +160,7 @@ img {
     height: auto; 
   }
     /* flexbox */
-  .navigation {
+  .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,67 +171,98 @@ img {
   .name {
     font-size: 75%;
   }
+  /*nav start*/
   nav {
-    margin-left: auto;
-    padding-bottom: 0.333em;
-    text-align: center;
+    width:100%;
+    padding-top: 0.666em;
+    font-size: 75%;
+  }
+  nav ul {
     width: 100%;
-  }
-  ul {
-    margin: 0;
-    padding: 0.2em;
+    float: right;
+    background-color: #000000;
+    margin: 0 0 3em 0;
+    list-style-type: none; 
     overflow: hidden;
-    background-color: #46494C;
-  }
-  li {
-    display: inline;
-    text-align: center;
-    text-decoration: none;
-    padding-left: 0.333em;
     padding-right: 0.333em;
   }
-  li a:link {
-    color: #1985A1;
-    background-color: #000000;
-    text-decoration: none;
-    padding: 0.333em 0.333em;
+  nav li {
+    float: right;
+    border-right: 1px solid #FFFFFF;
   }
-  li a:visited {
-    color: #1985A1;
+  nav li.first {
+    border-left: 1px solid #FFFFFF;
+  }
+  nav li a {
+    display: block;
+    padding: 0.333em 0.666em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #069;
+  }
+  nav li a:link {
+    color: #FFFFFF;
     text-decoration: none;
   }
-  li a:hover {
+  nav li a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  nav li a:hover {
     color: #46494C;
     background-color: #FFFFFF;
     text-decoration: none;
   }
-  li a:active {
+  nav li a:active {
     color: #46494C;
     text-decoration: none;
   }
+  .homenav {
+    position: fixed;
+  }
+  /*nav end*/
 
   .photos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-right: 1.777em;
+    padding-bottom: 1.777em;
   }
-      /*table style/set column */
-  .aboutme {
-    display: flex;
-    flex-direction:column; 
-    justify-content: flex-start;
-    align-items: flex-start;
+  .thumb {
+    position: relative;
+    width: 5em;
+    height: 5em;
+    overflow: hidden;
+    padding-right: 1.333em;
+    padding-left: 1.333em;
   }
+  .thumb img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+  }
+  .img2 {
+    width: 30%;
+    display: block;
+    height: 18.75%; /*16:10*/
+    max-width: 100%;
+  }
+  /*context*/ 
   .head1 {
     text-align: left;
-    font-size: 1em;
+    padding-left: 1.777em;
   }
-  .ambitions {
-    display: flex;
-    flex-direction:column;
+  .p1 {
+    padding-right:0.333em;
+    padding-left: 0.333em;
   }
   .head2 {
     text-align: left;
-    font-size: 1em;
+    padding-left: 1.777em;
+  }
+  .p2 {
+    padding-right:0.333em;
+    padding-left: 0.333em;
   }
 } 
 
@@ -257,8 +317,10 @@ img {
   .name {
     vertical-align: bottom;
   }
+  /*nav start*/
   nav {
     padding-top: 0.666em;
+    width: 100%;
   }
   nav ul {
     width: 100%;
@@ -300,6 +362,7 @@ img {
     color: #46494C;
     text-decoration: none;
   }
+  /*nav end*/
   .photos {
     display: flex;
     justify-content: center;
@@ -311,8 +374,8 @@ img {
     width: 10em;
     height: 10em;
     overflow: hidden;
-    padding-right: 1.777em;
-    padding-left: 1.777em;
+    padding-right: 1.333em;
+    padding-left: 1.333em;
   }
   .thumb img {
     position: absolute;
@@ -325,7 +388,7 @@ img {
     height: 18.75%; /*16:10*/
     max-width: 100%;
   }
-    /*table style/set column */
+    /*context*/
   .aboutme {
     display:table;
     width:100%;
