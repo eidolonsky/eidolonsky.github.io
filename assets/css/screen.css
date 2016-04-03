@@ -208,9 +208,6 @@ img {
 } 
 
 @media screen and (min-width: 35em) {
-  .nav {
-    padding-top: 1.333em;
-  }
   .bgi {
     z-index: -2;
     max-width: 100%;
@@ -244,7 +241,6 @@ img {
     border-width: 0.24em;
     border-radius: 50%;
   }  
-
   .img2 {
     width: 30%;
     display: block;
@@ -252,7 +248,7 @@ img {
     max-width: 100%;
   }
   /* Flexbox style */
-  .navigation {
+  .header {
     position: static;
     display: flex;
     justify-content: flex-start;
@@ -266,40 +262,49 @@ img {
     vertical-align: bottom;
   }
   nav {
-    margin-left: auto;
-    padding-bottom: 1.333em;
+    padding-top: 0.666em;
   }
-  ul {
-    margin: 0;
-    padding: 0.2em;
-    padding-right: 1.777em;
-    background-color: #46494C;
+  nav ul {
+    width: 100%;
+    float: right;
+    background-color: #000000;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style-type: none; 
+    overflow: hidden;
+    padding-right: 0.333em;
   }
-  li {
-    display: inline;
-    text-align: center;
+  nav li {
+    float: right;
+    border-right: 1px solid #FFFFFF;
+  }
+  nav li.first {
+    border-left: 1px solid #FFFFFF;
+  }
+  nav li a {
+    display: block;
+    padding: 0.333em 0.666em;
     text-decoration: none;
-    padding-left: 0.333em;
+    font-weight: bold;
+    color: #069;
   }
-  li a:link {
+  nav li a:link {
     color: #FFFFFF;
     text-decoration: none;
-    padding: 0.333em 0.333em;
   }
-  li a:visited {
+  nav li a:visited {
     color: #FFFFFF;
     text-decoration: none;
   }
-  li a:hover {
+  nav li a:hover {
     color: #46494C;
     background-color: #FFFFFF;
     text-decoration: none;
   }
-  li a:active {
+  nav li a:active {
     color: #46494C;
     text-decoration: none;
   }
-
   .photos {
     display: flex;
     justify-content: space-between;
