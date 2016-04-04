@@ -64,7 +64,7 @@ h1 {
 h2 {
   color: #202C39;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 1.44em; 
+  font-size: 1.56em; 
   line-height: 1.2em; 
   text-size-adjust: 100%;
 }
@@ -135,7 +135,7 @@ img {
   }
   /*home end*/
   h2 {
-    padding-top: 0.666em;
+    padding-top: 0.777em;
     padding-left: 0.333em;
     line-height: 0.333em;
   }
@@ -267,6 +267,39 @@ img {
     padding-right:0.333em;
     padding-left: 0.333em;
   }
+  /*Contact start*/
+  .message {
+    text-align: center;
+    margin-top: 1.777em;
+    padding-top: 1.777em;
+    padding-bottom: 1.777em;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+  .icons img {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.333em;
+  }
+  .message a:link {
+  color: #202C39;
+  text-decoration: underline;
+  }
+  .message a:visited {
+    color: #202C39;
+    text-decoration: none;
+  }
+  .message a:hover {
+    color: #46494C;
+    text-decoration: none;
+  }
+  .message a:active {
+    color: #46494C;
+    text-decoration: none;
+  }
+  /*Contact end*/
 } 
 
 @media screen and (min-width: 35em) {
@@ -432,4 +465,37 @@ img {
     padding-right:3.554em;
     padding-left: 1.777em;
   }
+  /*Contact start*/
+  .message {
+    text-align: center;
+    margin-top: 3.554em;
+    padding-top: 1.777em;
+    padding-bottom: 1.777em;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+  .icons img {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.333em;
+  }
+  .message a:link {
+  color: #202C39;
+  text-decoration: underline;
+  }
+  .message a:visited {
+    color: #202C39;
+    text-decoration: none;
+  }
+  .message a:hover {
+    color: #46494C;
+    text-decoration: none;
+  }
+  .message a:active {
+    color: #46494C;
+    text-decoration: none;
+  }
+  /*Contact end*/
 }
