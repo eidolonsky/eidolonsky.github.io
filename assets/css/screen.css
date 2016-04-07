@@ -274,11 +274,11 @@ img {
     padding-top: 1.777em;
     padding-bottom: 3.554em;
   }
-  .icons {
+  .icon {
     display: flex;
     justify-content: center;
   }
-  .icons img {
+  .icon img {
     width: 2em;
     height: 2em;
     margin-right: 0.333em;
