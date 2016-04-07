@@ -472,14 +472,19 @@ img {
     padding-top: 1.777em;
     padding-bottom: 3.554em;
   }
-  .icons {
+  .icon {
     display: flex;
     justify-content: center;
   }
-  .icons img {
+  .icon img {
     width: 2em;
     height: 2em;
-    margin-right: 0.333em;
+    padding-right: 0.333em;
+    transition: all 0.3s linear;    
+  }
+  .icon img:hover {
+    width: 2.5em;
+    height: 2.5em;
   }
   .message a:link {
   color: #202C39;
