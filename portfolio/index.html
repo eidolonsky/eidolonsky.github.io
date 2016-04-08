@@ -4,25 +4,23 @@
     <title>Portfolio - Tian Jiang</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-    <link rel="stylesheet" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="/assets/css/screen1.css" />
   </head>
-  <body>
-    <header>
+  <body>      
+    <nav>
       <a href="#" class="logo">
         <img class="name" src="/assets/img/logo.svg">
       </a>
-      <nav>
-        <a href="#" class="menu">
-          <img src="/assets/icon/menu.svg">
-        </a>  
-        <ul>
-          <li><a href="/index.html">Home</a></li>      
-          <li><a href="/about">About</a></li>
-          <li><a href="/portfolio" class="current">Portfolio</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>  
-    <script src="/assets/js/modernizr.js"></script>
+      <label for="show-menu" class="show-menu">
+        <img src="/assets/icon/menu.svg">
+      </label>
+      <input type="checkbox" id="show-menu" role="button">
+      <ul id="menu">
+        <li><a href="/index.html">Home</a></li>      
+        <li><a href="/about">About</a></li>
+        <li><a href="/portfolio" class="current">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>     
   </body>
 </html>

@@ -64,7 +64,7 @@ h1 {
 h2 {
   color: #202C39;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 1.56em; 
+  font-size: 1.5em; 
   line-height: 1.2em; 
   text-size-adjust: 100%;
 }
@@ -108,57 +108,81 @@ img {
 
 @media screen and (min-width: 35em) {
   /*nav start*/
-  header a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  header a:hover {
-    color: #BBBBBB;
-  }
-  header {
-    background: #000000;
+  nav {
+    background-color: black;
     width: 100%;
-    height: 4.3em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    height: 50px;
+    border-bottom: white solid;
+    z-index: 5;
   }
   .logo {
-    margin: 1.333em;
-    float: left;
-    width: 2.666em;
-    height: 2.666em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+    float: right;
+    width: 40px;
+    height: 40px;
   }
   .logo img {
-    height: 2.666em;
-    width: 2.666em;
-  }
-  nav {
-    margin: 1.333em;
-    float: right; 
-  }
-  .menu {
-    width: 0;
-    height: 0;
-  }
-  .menu img {
-    display: none;
-  }
-  a:hover .menu {
-    background-color: #999999;
+    height: 40px;
   }
   ul {
-    list-style: none;
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+    position: absolute;
   }
   li {
-    display: inline-block;
+    display:inline-block;
     float: left;
-    padding: 0.666em;
+    margin-right: 1px;
+  }
+  li a {
+    display:block;
+    min-width:80px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    background: #000000;
+    text-decoration: none;
+  }
+  li:hover a {
+    background: #FFFFFF;
+    color: #000000;
+  }
+  li ul {
+    display: none;
+  }
+  li ul li {
+    display: block;
+    float: none;
+  }
+  li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 10px;
   }
   .current {
-    color: #999999;
+    color: #00AABC;
+  }
+  ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+  }
+  .show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #000000;
+    text-align: left;
+    display: none;
+  }
+  input[type=checkbox]{
+      display: none;
+  }
+  input[type=checkbox]:checked ~ #menu{
+      display: block;
   }
   /*nav end*/
   /*home start*/
@@ -223,7 +247,6 @@ img {
     height: 18.75%;
     max-width: 100%;
   }
-    /*context*/
   .aboutme {
     display:table;
     width:100%;
@@ -289,8 +312,8 @@ img {
     height: 2.5em;
   }
   .message a:link {
-  color: #202C39;
-  text-decoration: underline;
+    color: #202C39;
+    text-decoration: underline;
   }
   .message a:visited {
     color: #202C39;
@@ -309,74 +332,69 @@ img {
 
 @media screen and (max-width: 35em) {
   /*nav start*/
-  header {
-    position: absolute;
-    background: #000000;
+  nav {
+    background-color: black;
     width: 100%;
-    height: 3.333em;
-    top: 0;
-    left: 0;
-    z-index: 100;
-  }
-  header a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
+    height: 50px;
+    border-bottom: white solid;
+    z-index: 5;
   }
   .logo {
-    margin: 1em;
-    float: left;
-    width: 2em;
-    height: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+    float: right;
+    width: 40px;
+    height: 40px;
   }
   .logo img {
-    height: 2em;
-    width: 2em;
-  }
-  .menu {
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-  }
-  .menu img {
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-  }
-  nav {
-    margin: 1em;
-    float: right; 
-  }
-  nav ul, nav:active ul { 
-    display: none;
-    position: absolute;
-    padding: 1em;
-    background: #000000;
-    right: 1em;
-    top: 3em;
-    width: 50%;
-  }
-  nav li {
-    text-align: center;
-    width: 100%;
-    padding: 0.5em 0;
-    margin: 0;
-  }
-  nav:hover ul {
-    display: block;
-  }
-  a:hover .menu {
-    background-color: #999999;
+    height: 40px;
   }
   ul {
-    list-style: none;
+    position: static;
+    display: none;
+    list-style-type:none;
+    margin: 0;
+    padding:0;
   }
   li {
-    display: inline-block;
-    padding: 0.666em;
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+    margin-bottom: 1px;
   }
-  .current {
-    color: #999999;
+  li a {
+    display:block;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    background: #000000;
+    text-decoration: none;
+  }
+  ul li, li a {
+    width: 75%;
+  }
+  .show-menu {
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #000000;
+    text-align: left;
+  }
+  .show-menu img {
+    width: 50px;
+    height: 50px;
+    float: left;
+  }
+  input[type=checkbox]{
+    display: none;
+  }
+  input[type=checkbox]:checked ~ #menu{
+    display: block;
   }
   /*nav end*/
   /*home start*/
@@ -460,7 +478,7 @@ img {
   /*context*/ 
   .head1 {
     text-align: left;
-    padding-left: 1.777em;
+    padding-left: 0.333em;
     font-size: 75%;
   }
   .p1 {
@@ -469,11 +487,11 @@ img {
   }
   .head2 {
     text-align: left;
-    padding-left: 1.777em;
+    padding-left: 0.333em;
     font-size: 75%;    
   }
   .p2 {
-    padding-right:0.333em;
+    padding-right: 0.333em;
     padding-left: 0.333em;
   }
   /*about end*/
@@ -497,8 +515,8 @@ img {
     margin-right: 0.333em;
   }
   .message a:link {
-  color: #202C39;
-  text-decoration: underline;
+    color: #202C39;
+    text-decoration: underline;
   }
   .message a:visited {
     color: #202C39;
