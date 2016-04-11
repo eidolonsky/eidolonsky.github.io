@@ -113,7 +113,7 @@ img {
     width: 100%;
     height: 50px;
     border-bottom: white solid;
-    z-index: 5;
+    z-index: 1;
   }
   .logo {
     margin-top: 5px;
@@ -188,7 +188,7 @@ img {
   /*nav end*/
   /*home start*/
   .bgi {
-    z-index: -2;
+    z-index: -3;
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -197,7 +197,7 @@ img {
     left: 0;
   }
   .homelogo {
-    z-index: -1;
+    z-index: -2;
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -227,7 +227,7 @@ img {
     justify-content: center;
     padding-right: 1.777em;
     padding-bottom: 1.777em;
-    padding-top: 5.777em;
+    padding-top: 1.777em;
   }
   .thumb {
     position: relative;
@@ -338,7 +338,7 @@ img {
     width: 100%;
     height: 50px;
     border-bottom: white solid;
-    z-index: 5;
+    z-index: 1;
   }
   .logo {
     margin-top: 5px;
@@ -351,12 +351,16 @@ img {
   .logo img {
     height: 40px;
   }
+  .current {
+    color: #00AABC;
+  }
   ul {
-    position: static;
+    position: absolute;
     display: none;
     list-style-type:none;
     margin: 0;
     padding:0;
+    z-index: 1;
   }
   li {
     display:inline-block;
@@ -375,6 +379,10 @@ img {
   }
   ul li, li a {
     width: 75%;
+  }
+  li:hover a {
+    background: #FFFFFF;
+    color: #000000;
   }
   .show-menu {
     display: block;
@@ -400,14 +408,14 @@ img {
   /*nav end*/
   /*home start*/
   .bgi {
-    z-index: -2;
+    z-index: -3;
     max-width: 100%;
     position: fixed;
     top: -5em;
     left: 0;
   }
   .homelogo {
-    z-index: 2;
+    z-index: -2;
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -455,7 +463,7 @@ img {
     justify-content: center;
     padding-right: 0.333em;
     padding-bottom: 0.333em;
-    padding-top: 4em;
+    padding-top: 0.666em;
   }
   .thumb {
     position: relative;
@@ -476,7 +484,6 @@ img {
     height: 18.75%; /*16:10*/
     max-width: 100%;
   }
-  /*context*/ 
   .head1 {
     text-align: left;
     padding-left: 0.333em;
