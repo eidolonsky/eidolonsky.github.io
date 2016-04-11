@@ -177,6 +177,7 @@ img {
     background: #000000;
     text-align: left;
     display: none;
+    
   }
   input[type=checkbox]{
       display: none;
