@@ -162,10 +162,10 @@ img {
   li ul li a {
     width: auto;
     min-width: 6.333em;
-    padding: 0 03emem;
+    padding: 0 0333em;
   }
   .current {
-    color: #00AABC;
+    background-color: #727D71;
   }
   ul li a:hover + .hidden, .hidden:hover {
     display: block;
@@ -363,7 +363,7 @@ img {
     height: 2.777em;
   }
   .current {
-    color: #00AABC;
+    background-color: #727D71;
   }
   ul {
     position: absolute;
