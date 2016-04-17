@@ -116,15 +116,12 @@ img {
     z-index: 1;
   }
   .logo {
-    margin-top: 0.333em;
-    margin-bottom: 0.333em;
-    margin-right: 1.777em;
     float: right;
-    width: 2.777em;
-    height: 2.777em;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
   }
   .logo img {
-    height: 2.777em;
+    height: 2.333em;
   }
   ul {
     list-style-type:none;
@@ -211,7 +208,8 @@ img {
     width: 22em;
   }
   .cnamelogo {
-    width: 13em;
+    width: 7.333em;
+    margin-left: 3em;
   }
   /*home end*/
   /*about start*/ 
@@ -353,14 +351,13 @@ img {
     z-index: 1;
   }
   .logo {
-    margin-top: 0.333em;
-    margin-bottom: 0.333em;
-    margin-right: 1.777em;
+    margin-top: 0.5em;
+    margin-right: 1.5em;
     float: right;
     width: 2.777em;
   }
   .logo img {
-    height: 2.777em;
+    height: 2.333em;
   }
   .current {
     background-color: #727D71;
@@ -435,13 +432,14 @@ img {
     left: 0;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
   }
   .namelogo {
     width: 10em;
   }
   .cnamelogo {
-    width: 6em;
+    width: 3.333em;
+    margin-left: 1.333em;
   }
   /*home end*/
   /*about start*/
