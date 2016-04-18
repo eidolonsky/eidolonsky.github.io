@@ -289,8 +289,10 @@ img {
   .works img {
     width: auto;
     height: 8em;
+    transition: all 1s ease-in-out;
   } 
   .works img:hover {
+    transform: scale(0.9);
   }
   .works li:target {
     position: relative;
@@ -312,6 +314,7 @@ img {
     background-color: #000;
     text-align: center;
     line-height: 2em;
+    z-index: 4;
   }
   .works li:target a:visited {
     text-decoration: none;
@@ -331,11 +334,14 @@ img {
   .works li:target .close {
     display: inline;
   }
+  .works li:target img:hover {
+    transform: scale(1);
+  }
   /*portfolio end*/
   /*Contact start*/
   .portrait {
-    width: 15.333em;  
-    height: 15.333em;
+    width: 13.333em;  
+    height: 13.333em;
     border-style: solid;
     border-radius: 50%;
     overflow: hidden;
