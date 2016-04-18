@@ -420,13 +420,14 @@ img {
     list-style-type:none;
     margin: 0;
     padding:0;
-    z-index: 1;
+    z-index: 1000;
   }
   li {
     display:inline-block;
     float: left;
     margin-right: 0.0777em;
     margin-bottom: 0.0777em;
+    z-index: 1000;
   }
   li a {
     display:block;
@@ -436,13 +437,16 @@ img {
     color: #FFFFFF;
     background: #000000;
     text-decoration: none;
+    z-index: 1000;    
   }
   ul li, li a {
     width: 75%;
+    z-index: 1000;
   }
   li:hover a {
     background: #FFFFFF;
     color: #000000;
+    z-index: 1000;    
   }
   .show-menu {
     display: block;
@@ -453,11 +457,13 @@ img {
     color: #FFFFFF;
     background: #000000;
     text-align: left;
+    z-index: 1000;    
   }
   .show-menu img {
     width: 3.333em;
     height: 3.333em;
     float: left;
+    z-index: 1000;    
   }
   input[type=checkbox]{
     display: none;
@@ -564,14 +570,17 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+    z-index: -1;
   }  
   .wimg {
     height: 5.6em;
     width: auto;
+    z-index: -1;
   }
   .works img {
     width: auto;
     height: 5.6em;
+    z-index: -1000;
   } 
   .works li:target {
     z-index:2;
@@ -609,7 +618,7 @@ img {
   }
   .works li:target .close {
     display: inline;
-    z-index: 100;
+    z-index: 5;
     right: 0;
   }
  
