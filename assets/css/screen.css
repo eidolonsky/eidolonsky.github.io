@@ -620,7 +620,7 @@ img {
   .works li:target .close {
     display: inline;
     z-index: 100;
-    right: 0;
+    left: 0;
   }
  
   /*portfolio end*/
