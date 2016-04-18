@@ -298,6 +298,7 @@ img {
     position: relative;
     transform-origin: top;
     z-index:2;
+    transition: all 0.5s ease-in-out;
   }
 
   .works li:target img {
@@ -325,7 +326,7 @@ img {
     display: none;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
   }
   .work li:target .wimg {
     position: absolute;
@@ -335,6 +336,7 @@ img {
   }
   .works li:target .close {
     display: inline;
+    left: 0;
   }
   .works li:target img:hover {
     transform: scale(1);
