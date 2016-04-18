@@ -186,11 +186,11 @@ img {
   .bgi {
     z-index: -3;
     max-width: 100%;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
   }
   .homelogo {
     z-index: -2;
@@ -289,10 +289,10 @@ img {
   .works img {
     width: auto;
     height: 8em;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
   } 
   .works img:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
   .works li:target {
     position: relative;
@@ -303,6 +303,8 @@ img {
   .works li:target img {
     width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .works li:target a {
     color: #FFF;
@@ -557,7 +559,60 @@ img {
   }
   /*about end*/
   /*portfolio start*/
-
+  .works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+  }  
+  .wimg {
+    height: 5.6em;
+    width: auto;
+  }
+  .works img {
+    width: auto;
+    height: 5.6em;
+  } 
+  .works li:target {
+    z-index:2;
+  }
+  .works li:target img {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+  .works li:target a {
+    color: #000000;
+    min-width: 1em;
+    width: 2em;
+    height: 2em;
+    font-size: 0.5em;
+    text-decoration: none;
+    background-color: #DCDCDD;
+    text-align: center;
+    line-height: 2em;
+    z-index: 4;
+    width: 100em;
+    height: 100em;
+  }
+  .works li:target a:visited {
+    text-decoration: none;
+  }  
+  .works .close {
+    display: none;
+    right: 0;
+  }
+  .work li:target .wimg {
+    position: absolute;
+    left: 0;
+  }
+  .works li:target .close {
+    display: inline;
+    z-index: 100;
+    right: 0;
+  }
+ 
   /*portfolio end*/
   /*Contact start*/
   .portrait {
