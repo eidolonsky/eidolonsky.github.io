@@ -123,18 +123,18 @@ img {
   .logo img {
     height: 2.333em;
   }
-  ul {
+  #menu ul {
     list-style-type:none;
     margin: 0;
     padding:0;
     position: absolute;
   }
-  li {
+  #menu li {
     display:inline-block;
     float: left;
     margin-right: 0.0777em;
   }
-  li a {
+  #menu li a {
     display:block;
     min-width:5em;
     height: 3.333em;
@@ -145,26 +145,26 @@ img {
     background: #000000;
     text-decoration: none;
   }
-  li:hover a {
+  #menu li:hover a {
     background: #FFFFFF;
     color: #000000;
   }
-  li ul {
+  #menu li ul {
     display: none;
   }
-  li ul li {
+  #menu li ul li {
     display: block;
     float: none;
   }
-  li ul li a {
+  #menu li ul li a {
     width: auto;
     min-width: 6.333em;
     padding: 0 0333em;
   }
-  .current {
+  #menu .current {
     background-color: #727D71;
   }
-  ul li a:hover + .hidden, .hidden:hover {
+  #menu ul li a:hover + .hidden, .hidden:hover {
     display: block;
   }
   .show-menu {
@@ -213,12 +213,6 @@ img {
   }
   /*home end*/
   /*about start*/ 
-  .img1 {
-    width: 8.4em;
-    border-style: solid;
-    border-width: 0.24em;
-    border-radius: 50%;
-  }  
   .photos {
     display: flex;
     justify-content: center;
@@ -283,11 +277,64 @@ img {
   }
   /*about end*/
   /*portfolio start*/
+  .works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }  
+  .wimg {
+    height: 8em;
+    width: auto;
+  }
+  .works img {
+    width: auto;
+    height: 8em;
+  } 
+  .works img:hover {
+  }
+  .works li:target {
+    position: relative;
+    transform-origin: top;
+    z-index:2;
+  }
 
+  .works li:target img {
+    width: 100%;
+    height: auto;
+  }
+  .works li:target a {
+    color: #FFF;
+    min-width: 1em;
+    width: 2em;
+    height: 2em;
+    font-size: 0.5em;
+    text-decoration: none;
+    background-color: #000;
+    text-align: center;
+    line-height: 2em;
+  }
+  .works li:target a:visited {
+    text-decoration: none;
+  }  
+  .works .close {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .work li:target .wimg {
+    position: absolute;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .works li:target .close {
+    display: inline;
+  }
   /*portfolio end*/
   /*Contact start*/
   .portrait {
-    width: 15.333em;
+    width: 15.333em;  
     height: 15.333em;
     border-style: solid;
     border-radius: 50%;
@@ -313,9 +360,6 @@ img {
     width: 2em;
     height: 2em;
     padding-right: 0.666em;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;    
   }
   .icon img:hover {
@@ -456,12 +500,6 @@ img {
   p {
     padding: 0.333em;
   }
-  .img1 {
-    width: 4.2em;
-    border-style: solid;
-    border-width: 0.2em;
-    border-radius: 50%;
-  }  
   .img2 {
     width: auto;
     height: auto; 
