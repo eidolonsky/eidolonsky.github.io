@@ -185,13 +185,15 @@ img {
   /*home start*/
   .bgi {
     z-index: -3;
-    max-width: 100%;
-    width: auto;
-    height: 100%;
     position: fixed;
+    top: -10em;
+    bottom: 0;
     left: 0;
-    top: 0;
-  }
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }  
   .homelogo {
     z-index: -2;
     max-width: 100%;
@@ -211,6 +213,7 @@ img {
     width: 7.333em;
     margin-left: 3em;
   }
+
   /*home end*/
   /*about start*/ 
   .photos {
