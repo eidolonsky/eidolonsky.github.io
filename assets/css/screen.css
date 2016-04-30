@@ -114,6 +114,7 @@ img {
     height: 5.333em;
     border-bottom: white solid;
     z-index: 1;
+    padding-top: 2em;
   }
   .logo {
     float: right;
