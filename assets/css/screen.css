@@ -138,12 +138,12 @@ img {
   #menu li a {
     display:block;
     min-width:5em;
-    height: 4.333em;
+    height: 3.333em;
     text-align: center;
     line-height: 3.333em;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #FFFFFF;
-    background: #000000;
+    background: #CCCCCC;
     text-decoration: none;
   }
   #menu li:hover a {
