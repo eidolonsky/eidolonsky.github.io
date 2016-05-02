@@ -405,7 +405,7 @@ img {
     padding-top: 2.333em;
   }
   #blog img {
-    width: 33.333%;
+    width: 50%;
   }
   #header {
     display: table-cell;
@@ -413,8 +413,10 @@ img {
     text-align: right;
   }
   #blogpost {
+    background: #EEEEEE; 
     display: table-cell;
     width: 75%;
+    padding-left: 2.333em;
   }
   /*Blog end*/
 }
