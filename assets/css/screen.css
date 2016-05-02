@@ -767,7 +767,7 @@ img {
     text-decoration: none;
   }
   #blog img {
-    width: 99em;
+    width: 99%;
     display: block;
     height: auto;
   }
