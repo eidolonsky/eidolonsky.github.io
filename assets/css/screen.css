@@ -748,6 +748,7 @@ img {
     width: 100%;
     table-layout:fixed;
     padding-top: 2.333em;
+    padding: 0.333em;
   }
   #blog a:link {
     color: #0C0C0C;
