@@ -449,7 +449,7 @@ img {
     text-align: center;
     font-size: 0.888em;
     border-bottom: 0.1333em solid #000000;
-    padding-bottom: 1.333em;
+    margin-bottom: 1.333em;
   }
   .blogcaption {
     width: 75%;
