@@ -781,10 +781,11 @@ img {
     padding-bottom: 1em;
   }
   .postdate {
-    text-align: left;
+    text-align: center;
     font-size: 0.888em;
     border-bottom: 0.1333em solid #000000;
     margin-bottom: 1.333em;
+    margin-top: 1em;
   }
   .blogcaption {
     display: block;
