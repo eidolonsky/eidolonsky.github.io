@@ -768,13 +768,13 @@ img {
     margin-right: auto;
   }
   #header {
-    text-align: right;
     padding: 2.333em;
   }
   #header h1 {
     padding-bottom: 2.333em;
   }
   #header h2 {
+    line-height: 1.333em;
     font-size: 1em;
   }
   #blogpost {
