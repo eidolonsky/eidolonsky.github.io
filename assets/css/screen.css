@@ -459,6 +459,8 @@ img {
   }
   .logo img {
     height: 2.333em;
+    margin-left: auto;
+    margin-right: auto;
   }
   .current {
     background-color: #727D71;
