@@ -442,7 +442,7 @@ img {
     display: table-cell;
     width: 70%;
     padding: 2.333em;
-    border-left: 0.1em solid #000000;
+    border-left: 0.1333em solid #000000;
   }
 
   .postdate {
