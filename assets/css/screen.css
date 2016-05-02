@@ -768,6 +768,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    max-width: 35em;
+    height: auto;
   }
   #header {
     padding: 2.333em;
