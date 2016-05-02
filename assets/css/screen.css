@@ -429,6 +429,12 @@ img {
     text-align: right;
     padding: 2.333em;
   }
+  #header h1 {
+    padding-bottom: 2.333em;
+  }
+  #header h2 {
+    font-size: 1.333em;
+  }
   #blogpost {
     display: table-cell;
     width: 70%;
