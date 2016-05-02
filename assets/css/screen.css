@@ -595,7 +595,6 @@ img {
     width: auto;
     height: auto; 
   }
-  
   .photos {
     display: flex;
     justify-content: center;
@@ -747,7 +746,7 @@ img {
   #blog {
     width: 100%%;
     padding-top: 2.333em;
-    padding: 1%;
+    padding-left: 0.333em;
   }
   #blog a:link {
     color: #0C0C0C;
@@ -781,7 +780,7 @@ img {
     padding-bottom: 1em;
   }
   .postdate {
-    text-align: center;
+    text-align: left;
     font-size: 0.888em;
     border-bottom: 0.1333em solid #000000;
     margin-bottom: 1.333em;
