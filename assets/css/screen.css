@@ -397,6 +397,21 @@ img {
     text-decoration: none;
   }
   /*Contact end*/
+  /*Blog start*/
+  #blog {
+    display: table;
+    width:100%;
+    table-layout:fixed;
+  }
+  #header {
+    display: table-cell;
+    width: 25%;
+  }
+  #blogpost {
+    display: table-cell;
+    width: 75%;
+  }
+  /*Blog end*/
 }
 
 @media screen and (max-width: 35em) {
