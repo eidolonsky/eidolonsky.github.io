@@ -747,6 +747,7 @@ img {
   #blog {
     width: 100%%;
     padding-top: 2.333em;
+    margin: 0.3em;
   }
   #blog a:link {
     color: #0C0C0C;
