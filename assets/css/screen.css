@@ -433,7 +433,7 @@ img {
     display: table-cell;
     width: 70%;
     padding: 2.333em;
-    border-left: 0.1em;
+    border-left: 0.1em solid #000000;
   }
   .postdate {
     text-align: center;
