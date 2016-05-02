@@ -744,7 +744,7 @@ img {
   /*Contact end*/
   /*Blog start*/
   #blog {
-    width: 100%;
+    width: 99%;
     padding-top: 2.333em;
     padding-left: 0.333em;
     padding-right: 0.333em;
@@ -767,6 +767,7 @@ img {
     text-decoration: none;
   }
   #blog img {
+    width: 99em;
     display: block;
     height: auto;
   }
