@@ -437,6 +437,7 @@ img {
   }
   #header h2 {
     font-size: 0.777em;
+    padding-top: 1.333em;
   }
   #blogpost {
     display: table-cell;
@@ -447,14 +448,11 @@ img {
   .postdate {
     text-align: center;
     font-size: 0.888em;
-    border-bottom: 0.33em solid #000000;
+    border-bottom: 0.1333em solid #000000;
   }
   .blogcaption {
     width: 75%;
     text-align: center;
-  }
-  .blogpost header {
-    padding-bottom: 1.333em;
   }
   /*Blog end*/
 }
