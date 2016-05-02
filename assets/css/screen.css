@@ -177,10 +177,10 @@ img {
     display: none;
   }
   input[type=checkbox]{
-      display: none;
+    display: none;
   }
   input[type=checkbox]:checked ~ #menu{
-      display: block;
+    display: block;
   }
   /*nav end*/
   /*home start*/
@@ -433,6 +433,11 @@ img {
     display: table-cell;
     width: 70%;
     padding: 2.333em;
+    border-left: 0.1em;
+  }
+  .postdate {
+    text-align: center;
+    font-size: 1.333em;
   }
   /*Blog end*/
 }
