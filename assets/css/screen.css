@@ -448,6 +448,9 @@ img {
     text-align: center;
     font-size: 1.333em;
   }
+  .blogcaption {
+    text-align: center;
+  }
   /*Blog end*/
 }
 
