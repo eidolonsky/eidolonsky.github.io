@@ -404,8 +404,24 @@ img {
     table-layout:fixed;
     padding-top: 2.333em;
   }
+  #blog a:link {
+    color: #0C0C0C;
+    text-decoration: none;
+  }
+  #blog a:visited {
+    color: #0C0C0C;
+    text-decoration: none;
+  }
+  #blog a:hover {
+    color: #0C0C0C;
+    text-decoration: none;
+  }
+  #blog a:active {
+    color: #0C0C0C;
+    text-decoration: none;
+  }
   #blog img {
-    width: 50%;
+    width: 75%;
   }
   #header {
     display: table-cell;
