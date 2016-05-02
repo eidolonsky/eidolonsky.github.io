@@ -437,8 +437,6 @@ img {
   }
   #header h2 {
     font-size: 1em;
-    width: 30%;
-    margin-right: 0; 
   }
   #blogpost {
     display: table-cell;
@@ -743,4 +741,62 @@ img {
     text-decoration: none;
   }
   /*Contact end*/
+  /*Blog start*/
+  #blog {
+    table-layout:fixed;
+    padding-top: 2.333em;
+  }
+  #blog a:link {
+    color: #0C0C0C;
+    text-decoration: none;
+  }
+  #blog a:visited {
+    color: #0C0C0C;
+    text-decoration: none;
+  }
+  #blog a:hover {
+    color: #0C0C0C;
+    text-decoration: none;
+  }
+  #blog a:active {
+    color: #0C0C0C;
+    text-decoration: none;
+  }
+  #blog img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #header {
+    text-align: right;
+    padding: 2.333em;
+  }
+  #header h1 {
+    padding-bottom: 2.333em;
+  }
+  #header h2 {
+    font-size: 1em;
+  }
+  #blogpost {
+    padding: 2.333em;
+    border-left: 0.1333em solid #000000;
+  }
+  .posth2 {
+    padding-bottom: 1em;
+  }
+  .postdate {
+    text-align: center;
+    font-size: 0.888em;
+    border-bottom: 0.1333em solid #000000;
+    margin-bottom: 1.333em;
+  }
+  .blogcaption {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Blog end*/
 } 
