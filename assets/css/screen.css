@@ -421,7 +421,10 @@ img {
     text-decoration: none;
   }
   #blog img {
+    display: block;
     width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
   #header {
     display: table-cell;
@@ -433,7 +436,7 @@ img {
     padding-bottom: 2.333em;
   }
   #header h2 {
-    font-size: 1.333em;
+    font-size: 0.333em;
   }
   #blogpost {
     display: table-cell;
@@ -464,10 +467,7 @@ img {
     width: 2.777em;
   }
   .logo img {
-    display: block;
     height: 2.333em;
-    margin-left: auto;
-    margin-right: auto;
   }
   .current {
     background-color: #727D71;
