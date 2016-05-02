@@ -402,10 +402,15 @@ img {
     display: table;
     width:100%;
     table-layout:fixed;
+    padding-top: 2.333em;
+  }
+  #blog img {
+    width: 33.333%;
   }
   #header {
     display: table-cell;
     width: 25%;
+    text-align: right;
   }
   #blogpost {
     display: table-cell;
