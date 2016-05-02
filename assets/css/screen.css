@@ -743,6 +743,7 @@ img {
   /*Contact end*/
   /*Blog start*/
   #blog {
+    width: 100%;
     table-layout:fixed;
     padding-top: 2.333em;
   }
@@ -766,6 +767,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
   }
   #header {
     padding: 2.333em;
