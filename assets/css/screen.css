@@ -748,6 +748,7 @@ img {
     padding-top: 2.333em;
     padding-left: 0.333em;
     padding-right: 0.333em;
+    overflow: hidden;
   }
   #blog a:link {
     color: #0C0C0C;
@@ -767,7 +768,7 @@ img {
   }
   #blog img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   #header h1 {
