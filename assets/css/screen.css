@@ -409,14 +409,14 @@ img {
   }
   #header {
     display: table-cell;
-    width: 25%;
+    width: 30%;
     text-align: right;
+    padding: 2.333em;
   }
   #blogpost {
-    background: #A5C9BF; 
     display: table-cell;
-    width: 75%;
-    padding-left: 2.333em;
+    width: 70%;
+    padding: 2.333em;
   }
   /*Blog end*/
 }
