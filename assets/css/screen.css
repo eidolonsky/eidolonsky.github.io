@@ -437,6 +437,8 @@ img {
   }
   #header h2 {
     font-size: 1em;
+    width: 30%;
+    margin-right: 0; 
   }
   #blogpost {
     display: table-cell;
