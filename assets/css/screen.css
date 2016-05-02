@@ -771,9 +771,6 @@ img {
     max-width: 35em;
     height: auto;
   }
-  #header {
-    padding: 2.333em;
-  }
   #header h1 {
     padding-bottom: 2.333em;
   }
@@ -783,7 +780,6 @@ img {
   }
   #blogpost {
     padding: 2.333em;
-    border-left: 0.1333em solid #000000;
   }
   .posth2 {
     padding-bottom: 1em;
