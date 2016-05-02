@@ -444,7 +444,9 @@ img {
     padding: 2.333em;
     border-left: 0.1333em solid #000000;
   }
-
+  .posth2 {
+    padding-bottom: 1em;
+  }
   .postdate {
     text-align: center;
     font-size: 0.888em;
