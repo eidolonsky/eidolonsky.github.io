@@ -204,24 +204,10 @@ p a:active {
     width: 75%;
     padding-right: 3.554em;
     padding-left: 1.777em;
+    margin-right: 6em;
   }
-  .ambitions {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-  }
-  .head2 {
-    display: table-cell;
-    text-align: right;
-    width: 25%;
-    padding-left: 1.777em;
-    padding-right: 1.777em;
-  }
-  .p2 {
-    display: table-cell;
-    width: 75%;
-    padding-right: 3.554em;
-    padding-left: 1.777em;
+  .p1 p {
+    max-width: 40em;
   }
   /* about end */
   /* portfolio start */
@@ -475,12 +461,8 @@ p a:active {
   h2 {
     padding-top: 0.777em;
     padding-left: 0.333em;
+    padding-bottom: 0.777em;
     line-height: 0.333em;
-  }
-  h3 {
-    padding-top: 0.666em;
-    padding-left: 0.333em;
-    line-height: 1.333em;
   }
   p {
     padding: 0.333em;
