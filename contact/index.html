@@ -8,20 +8,16 @@
   </head>
   <body>
     <nav>
-      <a href="/index.html" class="logo">
-        <img class="name" src="/assets/img/logo.svg">
-      </a>
-      <label for="show-menu" class="show-menu">
-        <img src="/assets/icon/menu.svg">
-      </label>
-      <input type="checkbox" id="show-menu" role="button">
-      <ul id="menu">
-        <li><a href="/index.html">Home</a></li>      
+      <ul class="topnav" id="myTopnav">
+        <li><a href="/index.html" class="current">Home</a></li>      
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contact" class="current">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
       </ul>
-    </nav> 
+    </nav>
     <div class="portrait">
       <img src="/assets/img/me.jpg" alt="me">
     </div>  
@@ -48,5 +44,6 @@
         <img src="/assets/icon/twi.svg" alt="Twitter">
       </a>
     </div>
+    <script type="text/javascript" src="/assets/js/modernizr.js"></script>
   </body>
 </html>

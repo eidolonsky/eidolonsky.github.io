@@ -8,15 +8,14 @@
   </head>
   <body>
     <nav>
-      <label for="show-menu" class="show-menu">
-        <img src="/assets/icon/menu.svg" id="menubutton">
-      </label>
-      <input type="checkbox" id="show-menu" role="button">
-      <ul id="menu">
+      <ul class="topnav" id="myTopnav">
         <li><a href="/index.html" class="current">Home</a></li>      
         <li><a href="/about">About</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
         <li><a href="/contact">Contact</a></li>
+        <li class="icon">
+        	<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  			</li>
       </ul>
     </nav> 
     <div class="bgi">  
@@ -33,5 +32,6 @@
         <img src="assets/img/name.svg" alt="Chinese name logo">
       </div>
     </div>
+    <script type="text/javascript" src="/assets/js/modernizr.js"></script>
   </body>
 </html>
