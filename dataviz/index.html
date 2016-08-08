@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio - Tian Jiang</title>
+    <title>Data Visualization - Portfolio - Tian Jiang</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link rel="stylesheet" href="/assets/css/screen.css" />
@@ -18,14 +18,19 @@
         </li>
       </ul>
     </nav>
-    <div class="myworks">
-	    <a href="/photo">
-	      <img src="/assets/img/img5.jpg">
-	    </a>
-	    <a href="/dataviz">  
-	      <img src="/assets/img/img6.jpg">
-	    </a>  
-    </div>
+    <div id="mygallery" class="gallery">
+		  <div class="images">
+		    <div class="active" style="background-image: url(/assets/img/img6.jpg)"></div>
+		    <div style="background-image: url(/assets/img/img7.jpg)"></div>
+		    <span class="left"></span>
+		    <span class="right"></span>
+		  </div>
+		  <div class="thumbs">
+		    <div class="active" style="background-image: url(/assets/img/img6.jpg)"></div>
+		    <div style="background-image: url(/assets/img/img7.jpg)"></div>
+		  </div>
+	</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
     <script type="text/javascript" src="/assets/js/modernizr.js"></script>
   </body>
 </html>
