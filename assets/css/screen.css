@@ -223,6 +223,12 @@ p a:active {
     width: 12em;
     height: 12em;
   }
+  .phoweb {
+    padding-left: 10em;
+  }
+  .dataweb {
+    padding-right: 10em;
+  }
   figure figcaption {
     padding-top: 1.777em;
     text-align: center;
