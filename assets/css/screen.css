@@ -20,6 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
+  position: relative;
 }
 
 ol, ul {
@@ -50,8 +51,8 @@ body {
   font-size: 1.2em;
   line-height: 1.44em;
   text-size-adjust: 100%;
+  height: 100%;
 }
-
 p {
   line-height: 1.2em;
   padding-bottom: 1.44em;
@@ -159,6 +160,7 @@ p a:active {
     width: 7.333em;
     margin-left: 3em;
   }
+
   /* home end */
   /* about start */
   .photos {
@@ -211,6 +213,39 @@ p a:active {
   }
   /* about end */
   /* portfolio start */
+  .myworks {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7.108em;
+    padding-bottom: 3em;
+  }
+  .myworks a img{
+    width: 12em;
+    height: 12em;
+  }
+  figure figcaption {
+    padding-top: 1.777em;
+    text-align: center;
+  }
+  .myworks a:link {
+    color: #0C0C0C;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    text-decoration: none;
+  }
+  .myworks a:visited {
+    color: #0C0C0C;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    text-decoration: none;
+  }
+  .myworks a:hover {
+    color: #0C0C0C;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    text-decoration: none;
+  }
+  .myworks a:active {
+    color: #0C0C0C;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    text-decoration: none;
+  }
   .gallery .images {
     position: relative;
     width: 100%;
@@ -515,6 +550,7 @@ p a:active {
     width: 3.333em;
     margin-left: 1.333em;
   }
+
   /* home end */
   /* about start */
   h2 {
@@ -574,6 +610,39 @@ p a:active {
   }
   /* about end */
   /* portfolio start */
+  .myworks {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7.108em;
+  }
+  .myworks a img{
+    width: 7em;
+    height: 7em;
+  }  
+  figure figcaption {
+    padding-top: 1.777em;
+    font-size: 80%;
+    text-align: center;
+  }
+  .myworks a:link {
+    color: #0C0C0C;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    text-decoration: none;
+  }
+  .myworks a:visited {
+    color: #0C0C0C;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    text-decoration: none;
+  }
+  .myworks a:hover {
+    color: #0C0C0C;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    text-decoration: none;
+  }
+  .myworks a:active {
+    color: #0C0C0C;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    text-decoration: none;
+  }  
   .gallery .images {
     position: relative;
     width: 100%;
