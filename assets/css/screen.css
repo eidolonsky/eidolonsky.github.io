@@ -229,6 +229,12 @@ p a:active {
   .dataweb {
     padding-right: 10em;
   }
+  .dv_bird {
+    padding-left: 10em;
+  }
+  .dv_gun {
+    padding-right: 10em;
+  }
   figure figcaption {
     padding-top: 1.777em;
     text-align: center;
@@ -258,14 +264,12 @@ p a:active {
     padding-bottom: 60%;
     height: 0;
   }
-
   .gallery .images > div, .gallery .images > span {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
   }
-
   .gallery .images > div {
     opacity: 0;
     background: center no-repeat;
@@ -368,6 +372,15 @@ p a:active {
   .gallery .thumbs > div.active:before {
     border-bottom-color: silver;
   }  
+
+  .vizimg {
+    width: 100%;
+    height: 100%;   
+  }
+  .vizimg img {
+    width: 100%;
+    height: 100%;
+  }
   /* portfolio end */
   /* Contact start */
   .portrait {
