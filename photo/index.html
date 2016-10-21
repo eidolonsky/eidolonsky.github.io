@@ -18,51 +18,74 @@
         </li>
       </ul>
     </nav>
-    <div id="mygallery" class="gallery">
-		  <div class="images">
-		    <div class="active" style="background-image: url(/assets/img/img5.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img2.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img3.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img4.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img1.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img8.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img9.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img10.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img11.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img12.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img13.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img14.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img15.jpg)"></div>
-	      <div style="background-image: url(/assets/img/img16.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img17.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img18.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img19.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img20.jpg)"></div>
-		    <span class="left"></span>
-		    <span class="right"></span>
-		  </div>
-		  <div class="thumbs">
-		    <div class="active" style="background-image: url(/assets/img/img5.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img2.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img3.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img4.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img1.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img8.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img9.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img10.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img11.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img12.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img13.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img14.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img15.jpg)"></div>
-	      <div style="background-image: url(/assets/img/img16.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img17.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img18.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img19.jpg)"></div>
-		    <div style="background-image: url(/assets/img/img20.jpg)"></div>   	    
-		  </div>
-	</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+    <div class="gallery">
+      <div class="tiles">  
+        <img src="/assets/img/img2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>  
+      <div class="tiles">
+        <img src="/assets/img/img3.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="tiles">  
+        <img src="/assets/img/img4.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+      <div class="tiles">  
+        <img src="/assets/img/img5.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+      <div class="tiles">  
+        <img src="/assets/img/img12.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+      <div class="tiles">  
+        <img src="/assets/img/img8.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+      </div>
+      <div class="tiles">  
+        <img src="/assets/img/img9.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+      </div>
+      <div class="tiles">
+        <img src="/assets/img/img17.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+      </div>
+      <div class="tiles">
+        <img src="/assets/img/img11.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+      </div>   
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+            <img src="/assets/img/img2.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/assets/img/img3.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/assets/img/img4.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/assets/img/img5.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/assets/img/img12.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/assets/img/img8.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/assets/img/img9.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/assets/img/img17.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="/assets/img/img11.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+      </div>
+    </div>    
     <script type="text/javascript" src="/assets/js/modernizr.js"></script>
   </body>
 </html>

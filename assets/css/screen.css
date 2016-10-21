@@ -242,6 +242,7 @@ p a:active {
   .myworks a:link {
     color: #0C0C0C;
     font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    text-decoration: none;
+    text-decoration: none;
   }
   .myworks a:visited {
     color: #0C0C0C;
@@ -258,121 +259,7 @@ p a:active {
     font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
     text-decoration: none;
   }
-  .gallery .images {
-    position: relative;
-    width: 100%;
-    padding-bottom: 60%;
-    height: 0;
-  }
-  .gallery .images > div, .gallery .images > span {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .gallery .images > div {
-    opacity: 0;
-    background: center no-repeat;
-    background-size: cover;
-    border-radius: 3px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-    -webkit-transition: all .88s ease;
-    transition: all .88s ease;
-  }
-
-  .gallery .images > div.active {
-    opacity: 1;
-  }
-
-  .gallery .images > span {
-    cursor: pointer;
-    width: 50px;
-    color: #fff;
-    text-shadow: 0 0 5px #000;
-    font-size: 50px;
-    height: 100%;
-    line-height: 44px;
-  }
-
-  .gallery .images > span.right {
-    left: 100%;
-    margin-left: -38px;
-  }
-
-  .gallery .images > span.left {
-    padding-left: 10px;
-  }
-
-  .gallery .images > span:before {
-    margin-top: -25px;
-    top: 50%;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .gallery .images > span.left:before {
-    content: "\00AB";
-  }
-
-  .gallery .images > span.right:before {
-    content: "\00BB";
-  }
-
-  .gallery .thumbs {
-    margin-top: 10px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .gallery .thumbs > div {
-    box-sizing: border-box;
-    background: center no-repeat;
-    background-size: cover;
-    display: inline-block;
-    position: relative;
-    margin: 4px;
-    border: 3px solid transparent;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    -webkit-transition: all .88s ease;
-    transition: all .88s ease;
-  }
-
-  @media (max-width: 768px) {
-    .gallery .thumbs > div {
-      width: 65px;
-      height: 65px;
-    }
-  }
-  .gallery .thumbs > div:before {
-    content: '';
-    width: 0;
-    height: 0;
-    border: solid transparent;
-    border-width: 0 5px 5px;
-    position: absolute;
-    left: 45px;
-    top: -8px;
-    -webkit-transition: all .88s ease;
-    transition: all .88s ease;
-  }
-
-  @media (max-width: 768px) {
-    .gallery .thumbs > div:before {
-      left: 25px;
-    }
-  }
-  .gallery .thumbs > div.active {
-    border-color: silver;
-  }
-
-  .gallery .thumbs > div.active:before {
-    border-bottom-color: silver;
-  }  
-
+  
   .vizimg {
     width: 100%;
     height: 100%;   
@@ -380,6 +267,21 @@ p a:active {
   .vizimg img {
     width: 100%;
     height: 100%;
+  }
+
+  .gallery {
+    display: flex;
+    padding-left: 3.333em;
+    padding-right: 3.333em;
+    flex-wrap: wrap;
+  }
+  .tiles {
+
+  }
+  .gallery img {
+    height: 12.333em;
+    width: auto;
+    padding: 0.333em;
   }
   /* portfolio end */
   /* Contact start */
@@ -431,6 +333,109 @@ p a:active {
   .icon img:hover {
     width: 2.5em;
     height: 2.5em;
+  }
+
+
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+
+    padding: 0;
+    width: 100%;
+    height: 100%;  
+  }
+
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 5;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mySlides {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .mySlides img {
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+    width: 80%;
+    height: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 5;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  img.demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  img.hover-shadow {
+    transition: 0.3s
+  }
+
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
   }
   /* Contact end */
   /* Blog start */
@@ -646,6 +651,7 @@ p a:active {
   .myworks a:link {
     color: #0C0C0C;
     font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    text-decoration: none;
+    text-decoration: none;  
   }
   .myworks a:visited {
     color: #0C0C0C;
@@ -662,122 +668,27 @@ p a:active {
     font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
     text-decoration: none;
   }  
-  .gallery .images {
-    position: relative;
-    width: 100%;
-    padding-bottom: 60%;
-    height: 0;
-  }
 
-  .gallery .images > div, .gallery .images > span {
-    position: absolute;
-    display: block;
+  .vizimg {
+    width: 100%;
+    height: 100%;   
+  }
+  .vizimg img {
     width: 100%;
     height: 100%;
-  }
-
-  .gallery .images > div {
-    opacity: 0;
-    background: center no-repeat;
-    background-size: cover;
-    border-radius: 3px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-    -webkit-transition: all .88s ease;
-    transition: all .88s ease;
-  }
-
-  .gallery .images > div.active {
-    opacity: 1;
-  }
-
-  .gallery .images > span {
-    cursor: pointer;
-    width: 50px;
-    color: #fff;
-    text-shadow: 0 0 5px #000;
-    font-size: 50px;
-    height: 100%;
-    line-height: 44px;
-  }
-
-  .gallery .images > span.right {
-    left: 100%;
-    margin-left: -38px;
-  }
-
-  .gallery .images > span.left {
-    padding-left: 10px;
-  }
-
-  .gallery .images > span:before {
-    margin-top: -25px;
-    top: 50%;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .gallery .images > span.left:before {
-    content: "\00AB";
-  }
-
-  .gallery .images > span.right:before {
-    content: "\00BB";
-  }
-
-  .gallery .thumbs {
-    margin-top: 10px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .gallery .thumbs > div {
-    box-sizing: border-box;
-    background: center no-repeat;
-    background-size: cover;
-    display: inline-block;
-    position: relative;
-    margin: 4px;
-    border: 3px solid transparent;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    -webkit-transition: all .88s ease;
-    transition: all .88s ease;
-  }
-
-  @media (max-width: 768px) {
-    .gallery .thumbs > div {
-      width: 65px;
-      height: 65px;
-    }
-  }
-  .gallery .thumbs > div:before {
-    content: '';
-    width: 0;
-    height: 0;
-    border: solid transparent;
-    border-width: 0 5px 5px;
-    position: absolute;
-    left: 45px;
-    top: -8px;
-    -webkit-transition: all .88s ease;
-    transition: all .88s ease;
-  }
-
-  @media (max-width: 768px) {
-    .gallery .thumbs > div:before {
-      left: 25px;
-    }
-  }
-  .gallery .thumbs > div.active {
-    border-color: silver;
-  }
-
-  .gallery .thumbs > div.active:before {
-    border-bottom-color: silver;
   }   
+
+  .gallery {
+    display: flex;
+    padding-left: 3.333em;
+    padding-right: 3.333em;
+
+  }
+
+  .gallery img {
+    height: 5em;
+    width: auto;
+  }
   /* portfolio end */
   /* Contact start */
   .portrait {
