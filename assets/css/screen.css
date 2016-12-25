@@ -216,6 +216,7 @@ p a:active {
   .myworks {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 7.108em;
     padding-bottom: 3em;
   }
@@ -229,12 +230,7 @@ p a:active {
   .dataweb {
     padding-right: 10em;
   }
-  .dv_bird {
-    padding-left: 10em;
-  }
-  .dv_gun {
-    padding-right: 10em;
-  }
+
   figure figcaption {
     padding-top: 1.777em;
     text-align: center;
@@ -636,7 +632,8 @@ p a:active {
   /* portfolio start */
   .myworks {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 7.108em;
   }
   .myworks a img{
