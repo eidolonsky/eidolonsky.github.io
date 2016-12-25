@@ -632,10 +632,12 @@ p a:active {
   /* portfolio start */
   .myworks {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 7.108em;
+    padding-bottom: 3em;
   }
+  
   .myworks a img{
     width: 7em;
     height: 7em;
