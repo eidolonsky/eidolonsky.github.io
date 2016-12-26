@@ -215,10 +215,16 @@ p a:active {
   /* portfolio start */
   .myworks {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 7.108em;
+    justify-content: center;
+    padding-top: 5em;
     padding-bottom: 3em;
+  }
+  .dv {
+    padding: 0.777em;
+  }
+  .pweb {
+    padding: 2.777em;
   }
   .myworks a img{
     width: 12em;
@@ -631,15 +637,17 @@ p a:active {
   /* portfolio start */
   .myworks {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    padding-top: 7.108em;
+    padding-top: 1.333em;
     padding-bottom: 3em;
   }
-  
+  .dv, .pweb {
+    padding: 0.333em;
+  }
   .myworks a img{
-    width: 7em;
-    height: 7em;
+    width: 9em;
+    height: 9em;
   }  
   figure figcaption {
     padding-top: 1.777em;
