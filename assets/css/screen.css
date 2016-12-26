@@ -680,11 +680,11 @@ p a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-around;
     padding-top: 1.777em;
   }
   .tiles {
-    padding-top: 0.777em;
+    padding: 0.333em;
+
   }
   .gallery img {
     height: 10em;
