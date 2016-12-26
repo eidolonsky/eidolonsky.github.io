@@ -681,15 +681,13 @@ p a:active {
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
-    padding-left: 3.333em;
-    padding-right: 3.333em;
-    padding-top: 3.333em;
-  }
-  .tiles {
     padding-top: 1.777em;
   }
+  .tiles {
+    padding-top: 0.777em;
+  }
   .gallery img {
-    height: 5em;
+    height: 10em;
     width: auto;
   }
   /* The Modal (background) */
