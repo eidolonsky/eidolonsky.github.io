@@ -269,10 +269,9 @@ p a:active {
     display: flex;
     padding-left: 3.333em;
     padding-right: 3.333em;
+    padding-top: 1.777em;
     flex-wrap: wrap;
-  }
-  .tiles {
-
+    justify-content: center;
   }
   .gallery img {
     height: 12.333em;
@@ -504,7 +503,7 @@ p a:active {
   /* Blog end */
 }
 
-@media screen and (max-width: 35em) {
+@media screen and (max-width: 35em) { 
   /* nav start */
   ul.topnav {
     list-style-type: none;
@@ -679,11 +678,16 @@ p a:active {
 
   .gallery {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
     padding-left: 3.333em;
     padding-right: 3.333em;
-
+    padding-top: 3.333em;
   }
-
+  .tiles {
+    padding-top: 1.777em;
+  }
   .gallery img {
     height: 5em;
     width: auto;
