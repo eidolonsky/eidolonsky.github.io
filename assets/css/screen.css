@@ -286,7 +286,7 @@ p a:active {
   }
   /* portfolio end */
   /* Contact start */
-  .portrait {
+  .portraitimg {
     width: 13.333em;
     height: 13.333em;
     border-style: solid;
@@ -296,7 +296,7 @@ p a:active {
     margin-left: auto;
     margin-right: auto;
   }
-  .portrait img {
+  .portraitimg img {
     width: 15.333em;
     height: 15.333em;
   }
@@ -354,7 +354,6 @@ p a:active {
   /* Modal Content */
   .modal-content {
     position: relative;
-
     padding: 0;
     width: 100%;
     height: 100%;  
@@ -387,7 +386,12 @@ p a:active {
     position: absolute;
     top: 0; bottom:0; left: 0; right:0;
     margin: auto;
-    width: 80%;
+    height: 100%;
+    width: auto;
+  }
+
+  .landscape img {
+    width: 95%;
     height: auto;
   }
 
