@@ -286,7 +286,7 @@ p a:active {
   }
   /* portfolio end */
   /* Contact start */
-  .portraitimg {
+  .portrait {
     width: 13.333em;
     height: 13.333em;
     border-style: solid;
@@ -296,7 +296,7 @@ p a:active {
     margin-left: auto;
     margin-right: auto;
   }
-  .portraitimg img {
+  .portrait img {
     width: 15.333em;
     height: 15.333em;
   }
