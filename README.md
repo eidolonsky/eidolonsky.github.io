@@ -1,4 +1,6 @@
 # My Personal Website
-http://t1anj1ang.com
+##http://www.t1anj1ang.com
+
 ----
-Domain may change.
+
+Since I don't have a server, and I prefer not to use external links, the number of photos is limited.
