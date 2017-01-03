@@ -273,11 +273,11 @@ p a:active {
 
   .gallery {
     display: flex;
-    padding-left: 3.333em;
-    padding-right: 3.333em;
     padding-top: 1.777em;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 3.333em;
   }
   .gallery img {
     height: 12.333em;
