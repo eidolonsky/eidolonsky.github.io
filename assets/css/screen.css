@@ -209,7 +209,7 @@ p a:active {
     margin-right: 6em;
   }
   .p1 p {
-    max-width: 40em;
+    max-width: 30.333em;
   }
   /* about end */
   /* portfolio start */
@@ -271,18 +271,26 @@ p a:active {
     height: 100%;
   }
 
-  .gallery {
+  .win {
+    width: 100%;
     display: flex;
-    padding-top: 1.777em;
-    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery {
     width: 80%;
-    margin: 0 auto;
-    padding-left: 3.333em;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    padding-right: 1.777em;
+    padding-bottom: 1.777em;
+    padding-top: 3.554em;    
   }
   .gallery img {
-    height: 12.333em;
-    width: auto;
-    padding: 0.333em;
+    height: auto;
+    width: 12em;
+  }
+  .tiles {
+    padding: 0.1777em;
   }
   /* portfolio end */
   /* Contact start */
@@ -335,9 +343,7 @@ p a:active {
     width: 2.5em;
     height: 2.5em;
   }
-
-
-
+  
   /* The Modal (background) */
   .modal {
     display: none;
@@ -696,7 +702,6 @@ p a:active {
   }
   .tiles {
     padding: 0.333em;
-
   }
   .gallery img {
     height: 15em;
