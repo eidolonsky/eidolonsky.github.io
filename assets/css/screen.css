@@ -115,13 +115,13 @@ p a:active {
     float: left;
   }
   ul.topnav li a {
-      display: inline-block;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 17px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
   }
   .current {
     background-color: #222222;
@@ -129,6 +129,27 @@ p a:active {
   ul.topnav li a:hover {background-color: #555;}
   ul.topnav li.icon {display: none;}
   /* nav end */
+  /* bottombar start */
+  .bottombar {
+    margin-top: 0.777em;
+    height: 7.333em;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .clogo img {
+    width: 2em;
+    padding: 1.333em;
+  }
+  .copyright {
+    padding: 1.333em;
+    color: #FFFFFF;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 1.111em;
+  }
+  /* bottombar end */
   /* home start */
   .bgi {
     z-index: -3;
@@ -906,4 +927,25 @@ p a:active {
     padding-bottom: 1.333em;
   }
   /* Blog end */
+  /* bottombar start */
+  .bottombar {
+    margin-top: 0.777em;
+    height: 5.333em;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .clogo img {
+    width: 1.5em;
+    padding: 1em;
+  }
+  .copyright {
+    padding: 1em;
+    color: #FFFFFF;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 0.777em;
+  }
+  /* bottombar end */  
 }
