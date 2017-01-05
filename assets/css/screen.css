@@ -413,12 +413,12 @@ p a:active {
     position: absolute;
     top: 0; bottom:0; left: 0; right:0;
     margin: auto;
-    height: 100%;
+    height: 95%;
     width: auto;
   }
 
   .landscape img {
-    width: 100%;
+    width: 95%;
     height: auto;
   }
 
@@ -453,12 +453,7 @@ p a:active {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  img.demo {
-    opacity: 0.6;
-  }
-
-  .active,
-  .demo:hover {
+  .active:hover {
     opacity: 1;
   }
 
