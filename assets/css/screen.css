@@ -361,8 +361,9 @@ p a:active {
     transition: all 0.3s ease;
   }
   .icon img:hover {
-    width: 2.5em;
-    height: 2.5em;
+    width: 1.75em;
+    height: 1.75em;
+    opacity: 0.75;
   }
   
   /* The Modal (background) */
