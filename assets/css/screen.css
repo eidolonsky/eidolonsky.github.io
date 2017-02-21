@@ -665,9 +665,10 @@ p a:active {
   .myworks {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding-top: 1.333em;
-    padding-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 4em; 
   }
   .dv, .pweb {
     padding: 0.333em;
