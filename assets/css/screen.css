@@ -184,12 +184,14 @@ p a:active {
 
   /* home end */
   /* about start */
-  .photos {
+  .clocks {
     display: flex;
     justify-content: center;
     padding-right: 1.777em;
     padding-bottom: 1.777em;
-    padding-top: 3.554em;
+  }
+  .clocks svg {
+    margin: 1.777em;
   }
   .thumb {
     position: relative;
@@ -622,7 +624,7 @@ p a:active {
     height: 18.75%;
     max-width: 100%;
   }
-  .photos {
+  .clocks {
     display: flex;
     justify-content: center;
     padding-right: 0.333em;
