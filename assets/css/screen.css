@@ -353,17 +353,18 @@ p a:active {
     color: #46494C;
     text-decoration: none;
   }
-  .icon {
+  .icons {
     display: flex;
     justify-content: center;
+    padding-bottom: 1.777em;
   }
-  .icon img {
+  .icons img {
     width: 2em;
     height: 2em;
     padding-right: 0.666em;
     transition: all 0.3s ease;
   }
-  .icon img:hover {
+  .icons img:hover {
     width: 1.75em;
     height: 1.75em;
     opacity: 0.75;
@@ -865,11 +866,11 @@ p a:active {
     color: #46494C;
     text-decoration: none;
   }
-  .icon {
+  .icons {
     display: flex;
     justify-content: center;
   }
-  .icon img {
+  .icons img {
     width: 2em;
     height: 2em;
     margin-right: 0.333em;
