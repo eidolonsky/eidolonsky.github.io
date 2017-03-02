@@ -188,10 +188,12 @@ p a:active {
     display: flex;
     justify-content: center;
     padding-right: 1.777em;
-    padding-bottom: 1.777em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
   .clocks svg {
-    margin: 1.777em;
+    margin-right: 1.777em;
+    margin-left: 1.777em;
   }
   .thumb {
     position: relative;
