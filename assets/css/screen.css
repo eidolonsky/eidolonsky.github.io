@@ -317,6 +317,7 @@ p a:active {
   }
   .tiles {
     padding: 0.1777em;
+    cursor: pointer;
   }
   /* portfolio end */
   /* Contact start */
