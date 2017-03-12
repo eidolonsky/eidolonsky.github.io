@@ -129,5 +129,3 @@ var clockD3 = function(TZhr, faceColor, handColor, city) {
     return render(data);
   }, 1000);
 };
-clockD3(14, "white", "black", "Shanghai"); 
-clockD3(0, "black", "white", "Chicago"); 
