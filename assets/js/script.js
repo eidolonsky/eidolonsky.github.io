@@ -23,13 +23,13 @@ var clockD3 = function(TZhr, faceColor, handColor, city) {
   var offSetX = 90;
   var offSetY = 100;
   var pi = Math.PI;
-  var scaleSecs = d3.scale.linear()
+  var scaleSecs = d3.scaleLinear()
                           .domain([0, 59 + 999/1000])
                           .range([0, 2 * pi]);
-  var scaleMins = d3.scale.linear()
+  var scaleMins = d3.scaleLinear()
                           .domain([0, 59 + 59/60])
                           .range([0, 2 * pi]) ;
-  var scaleHors = d3.scale.linear()
+  var scaleHors = d3.scaleLinear()
                           .domain([0, 11 + 59/60])
                           .range([0, 2 * pi]);
 
@@ -57,7 +57,7 @@ var clockD3 = function(TZhr, faceColor, handColor, city) {
   //clockhands
   var render = function(data) {
     clockFace.selectAll(".clockhand").remove();
-    var secArc = d3.svg.arc()
+    var secArc = d3.arc()
                       .innerRadius(0)
                       .outerRadius(70)
                       .startAngle(function(d) {
@@ -66,7 +66,7 @@ var clockD3 = function(TZhr, faceColor, handColor, city) {
                       .endAngle(function(d) {
                         return scaleSecs(d.numeric)
                       });
-    var minArc = d3.svg.arc()
+    var minArc = d3.arc()
                       .innerRadius(0)
                       .outerRadius(60)
                       .startAngle(function(d) {
@@ -75,7 +75,7 @@ var clockD3 = function(TZhr, faceColor, handColor, city) {
                       .endAngle(function(d) {
                         return scaleMins(d.numeric)
                       });
-    var horArc = d3.svg.arc()
+    var horArc = d3.arc()
                       .innerRadius(0)
                       .outerRadius(50)
                       .startAngle(function(d) {
