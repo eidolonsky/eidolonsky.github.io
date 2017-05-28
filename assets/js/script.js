@@ -136,34 +136,34 @@ var clockD3 = function(TZhr, faceColor, handColor, city) {
 //
 //
 
-function geoGlobe(pointColor, csvGeo) {
+function geoGlobe(pointColor, csvGeo, w, h) {
   //Inspired by https://habrahabr.ru/post/186532/
-  var width = 500;
-  var height = 500;
+  var w;
+  var h;
   var scrollSpeed = 50;
   var current = 180;
   // scale
   var longitudeScale = d3.scaleLinear()
-    .domain([0, width])
+    .domain([0, w])
     .range([-180, 180]);
   // projection
   var planetProj = d3.geoOrthographic()
     .scale(200)
     .rotate([longitudeScale(current), 0])
-    .translate([width / 2, height / 2])
+    .translate([w / 2, h / 2])
     .clipAngle(90);
   var pointProj = d3.geoOrthographic()
     .scale(200)
     .rotate([longitudeScale(current), 0])
-    .translate([width / 2, height / 2])
+    .translate([w / 2, h / 2])
     .clipAngle(90);
   // path
   var path = d3.geoPath()
     .projection(planetProj);
   // svg
   var svg = d3.select(".globe").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", w)
+    .attr("height", h);
   // mask
   var center = planetProj.translate();   
   // get the center of the circle
@@ -585,9 +585,9 @@ function timeSerie(csvTime) {
 //
 //
 
-function termBubble(termJson) {
+function termBubble(termJson, w, h) {
 
-  var w = 575, h = 575;
+  var w, h;
 
   var svg = d3.select(".bubble").append("svg")
           .attr("width", w)
@@ -650,5 +650,5 @@ function termBubble(termJson) {
 //
 
 window.onload = radioButton();
-window.onload = geoGlobe("#FFE900", "/assets/data/o.geo.csv");
-window.onload = termBubble("/assets/data/o.term.json");
+window.onload = geoGlobe("#FFE900", "/assets/data/o.geo.csv", 400,400);
+window.onload = termBubble("/assets/data/o.term.json", 400, 400);
