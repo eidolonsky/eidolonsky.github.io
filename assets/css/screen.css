@@ -121,10 +121,10 @@ p a:active {
     display: inline-block;
     color: #FFFFFF;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.75em 0.5em;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 1em;
   }
   .current {
     background-color: #222222;
@@ -134,8 +134,7 @@ p a:active {
   /* nav end */
   /* bottombar start */
   .bottombar {
-    margin-top: 0.777em;
-    height: 7.333em;
+    height: 5.333em;
     width: 100%;
     background-color: #000000;
     display: flex;
@@ -153,6 +152,11 @@ p a:active {
     font-size: 1.111em;
   }
   /* bottombar end */
+  /* cen start */
+  .cen {
+    min-height: calc(100vh - 3em - 5.333em);
+  }
+  /* cen end */
   /* home start */
   .bgi {
     z-index: -3;
@@ -324,13 +328,16 @@ p a:active {
   }
   /* portfolio end */
   /* Contact start */
+  .portholder {
+    padding-top: 0.333em;
+  }
   .portrait {
     width: 13.333em;
     height: 13.333em;
     border-style: solid;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: 2.777em;
+    margin-top: 2.333em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -362,7 +369,7 @@ p a:active {
   .icons {
     display: flex;
     justify-content: center;
-    padding-bottom: 1.777em;
+    padding-bottom: 2.333em;
   }
   .icons img {
     width: 2em;
