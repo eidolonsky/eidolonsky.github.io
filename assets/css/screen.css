@@ -247,11 +247,14 @@ p a:active {
   /* about end */
   /* portfolio start */
   .myworks {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 5em;
-    padding-bottom: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: 50em;
   }
   .dv {
     padding: 0.777em;
