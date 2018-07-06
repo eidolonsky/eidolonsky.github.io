@@ -7,8 +7,8 @@ var food;
 var index = -1;
 var time;  
 
-function begindraw(){  
-  document.getElementById("btnBegin").disabled = true;  
+function startdraw(){  
+  document.getElementById("buttonStart").disabled = true;  
   drawfood();  
 }  
 function drawfood(){
@@ -25,6 +25,6 @@ function drawfood(){
 }  
 function enddraw(){  
   window.clearTimeout(time);  
-  document.getElementById("btnBegin").disabled = false;  
+  document.getElementById("buttonStart").disabled = false;  
   foods.splice(index, 1);
 } 
