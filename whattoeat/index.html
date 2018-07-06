@@ -15,6 +15,7 @@
       gtag('config', 'UA-109499402-1');
     </script>    
   </head>
+
   <body>      
     <nav>
       <ul class="topnav" id="myTopnav">
@@ -27,13 +28,18 @@
         </li>
       </ul>
     </nav>
-    
+    <div class="cen">
+ 
+      <h1 id="result">Draw your food</h1>  
+      <input type="button" value="Draw" id="btnBegin" onclick="begindraw();">   
+      <input type="button" value="Stop" id="btnEnd" onclick="enddraw();"> 
 
-
+    </div>
     <div class="bottombar">
       <div class="clogo"><img src="/assets/img/wlogo.png"></div>
       <div class="copyright">© 2018 Tian Jiang</div>
     </div>    
     <script type="text/javascript" src="/assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="/whattoeat/script.js"></script>
   </body>
 </html>
