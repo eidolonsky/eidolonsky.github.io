@@ -19,11 +19,11 @@ function startdraw(){
 }  
 function drawfood(){
   if(foods.length > 0){
-    index = Math.floor(Math.random()*1000 % foods.length);  
+    index = Math.floor(Math.random()*100 % foods.length);  
     food = foods[index];  
     document.getElementById("result").innerHTML = food;  
 
-    time = window.setTimeout(drawfood,2);  
+    time = window.setTimeout(drawfood, 8.12);  
   }
   else{
       document.getElementById("result").innerHTML = "Nah";  
