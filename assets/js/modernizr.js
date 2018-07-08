@@ -14,14 +14,15 @@ function myFunction() {
 /*gallery*/
 function openModal() {
   document.getElementById('myModal').style.display = "block";
+
 }
 
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slides = document.getElementsByClassName("mySlides");
+var slideIndex = slides.length;
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -32,14 +33,12 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var slides = document.getElementsByClassName("mySlides");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {n = n - slides.length}
+  if (n < 1) {n = n + slides.length}
   for (var i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[ slideIndex - 1 ].style.display = "block";
+  slides[slides.length - n].style.display = "block";
 }
 
 /*tictactoe*/
