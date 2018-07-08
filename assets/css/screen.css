@@ -561,7 +561,8 @@ p a:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    height: 60vh;     
   }
   .centerwork {
     padding-bottom: 2.5em;
