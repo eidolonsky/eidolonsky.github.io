@@ -308,7 +308,6 @@ p a:active {
   }
 
   .win {
-    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -316,10 +315,7 @@ p a:active {
     width: 80%;
     display: flex;
     flex-wrap: wrap;    
-    justify-content: center;
-    padding-right: 1.777em;
-    padding-bottom: 1.777em;
-    padding-top: 3.554em;    
+    justify-content: space-between;
   }
   .gallery img {
     height: auto;
