@@ -8,7 +8,7 @@ var foods = [
  "Peking Duck", "KFC", "McDonald", "冒菜", "焖饭",
  "Poke Bowl", "Steak House", "Salad", "Rice Noodle",
  "Pork Feet", "拌饭", "麻辣香锅", "麻辣烫", "本帮菜", 
- "串串香", "川", "鲁", "粤", "淮", "扬", "汤包", "湘", "京"
+ "串串香", "汤包", "豆花", "脑花", "卤菜"
 ]; 
 
 var food;
