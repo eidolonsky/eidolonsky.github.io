@@ -309,20 +309,21 @@ p a:active {
 
   .win {
     padding-top: 1.777em;
+    padding-bottom: 1.777em;
     display: flex;
     justify-content: center;
   }
   .gallery {
     width: 75%;
     display: flex;
-    flex-wrap: wrap;    
-    justify-content: space-between;
+    flex-wrap: wrap;  
   }
   .gallery img {
     height: auto;
     width: 12em;
   }
   .tiles {
+    flex: 0;
     padding: 0.4777em;
     cursor: pointer;
   }
