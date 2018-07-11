@@ -41,6 +41,20 @@ function showSlides(n) {
   slides[slides.length - n].style.display = "block";
 }
 
+document.onkeydown = keyLogin;
+function keyLogin(event) {
+
+  if (event.keyCode == 37) {
+    plusSlides(1);
+  }
+  if (event.keyCode == 39) {
+    plusSlides(-1);
+  }
+  if (event.keyCode == 27) {
+    closeModal();
+  }
+}
+
 /*tictactoe*/
 function startGame() {
   for (var i = 1; i<10; i++) {
