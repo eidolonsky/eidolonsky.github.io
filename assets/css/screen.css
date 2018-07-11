@@ -308,11 +308,12 @@ p a:active {
   }
 
   .win {
+    padding-top: 1.777em;
     display: flex;
     justify-content: center;
   }
   .gallery {
-    width: 80%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;    
     justify-content: space-between;
@@ -322,7 +323,7 @@ p a:active {
     width: 12em;
   }
   .tiles {
-    padding: 0.1777em;
+    padding: 0.4777em;
     cursor: pointer;
   }
   /* portfolio end */
