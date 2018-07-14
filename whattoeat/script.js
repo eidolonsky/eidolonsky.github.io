@@ -1,9 +1,9 @@
 /*whattoeat*/
 var foods = [
-"BBQ","Hot Pot","Sushi","泉鲤", "新加坡鱼酿", 
-"Dumpling","乐凯撒","Burger King", "Fried Rice", 
+"BBQ", "Hot Pot", "Sushi", "泉鲤", "新加坡鱼酿", 
+"Dumpling", "乐凯撒", "Burger King", "Fried Rice", 
 "Ramen", "Ice Cream", "螺蛳粉", "汤饭", "凉皮", 
- "Crab Cake", "煲仔饭", "Rum Milk Shake",
+ "Crab Cake", "煲仔饭", "Rum Milkshake",
  "Bamboo", "Kiwi", "烧腊", "Fried Shrimp", 
  "Peking Duck", "KFC", "McDonald", "冒菜", "焖饭",
  "Poke Bowl", "Steak House", "Salad", "Rice Noodle",
