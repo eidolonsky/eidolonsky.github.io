@@ -477,7 +477,9 @@ p a:active {
   img.hover-shadow {
     transition: 0.3s
   }
-
+  .hover-shadow {
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 1), 0 2px 5px 0 rgba(0, 0, 0, 1)
+  }
   .hover-shadow:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1), 0 3px 10px 0 rgba(0, 0, 0, 1)
   }
@@ -874,10 +876,10 @@ p a:active {
   /* Position the "next button" to the right */
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
   }
-
-  /* On hover, add a black background color with a little bit see-through */
+  .hover-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1), 0 3px 10px 0 rgba(0, 0, 0, 1)
+  }
 
   img.demo {
     opacity: 0.6;
