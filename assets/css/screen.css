@@ -598,6 +598,8 @@ p a:active {
    }
    #my_datavis {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
    }
    #my_datavis svg {
