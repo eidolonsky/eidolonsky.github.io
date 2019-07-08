@@ -375,7 +375,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
 
   var colorArr = ["#C73E1D", "#035E7B", "#7E1F86" ]
   var hexbin = d3.hexbin()
-            .radius(8)
+            .radius(6)
             .extent([[0, 0], [width, height]])
   svg5.append("clipPath")
     .attr("id", "clip")
