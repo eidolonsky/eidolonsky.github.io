@@ -596,7 +596,10 @@ p a:active {
      justify-content: center;
      align-items: center;
    }
-
+   #my_datavis {
+    display: flex;
+    flex-wrap: wrap;
+   }
    #my_datavis svg {
      box-shadow: 1px 1px 3px 2px #555555;
      margin: 30px;
@@ -1071,8 +1074,8 @@ p a:active {
 
 #my_datavis svg {
   box-shadow: 1px 1px 3px 2px #555555;
-  width: 100%;
-  height: 100%
+  width: 80%;
+  height: 80%
   margin: 30px;
   display: flex;
   justify-content: center;
