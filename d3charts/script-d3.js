@@ -22,8 +22,8 @@ var data = [];
 for (i = 1; i < 6; i++) {
   data.push(i * 4);
 }
-for (n = 15; n < 450; n = n + 50) {
-  for (m = 15; m < 450; m = m + 50) {
+for (n = 15; n < 260; n = n + 50) {
+  for (m = 15; m < 260; m = m + 50) {
     svg1
       .selectAll("myCircle")
       .data(data)
