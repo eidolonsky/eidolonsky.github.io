@@ -590,21 +590,21 @@ p a:active {
 
   /* whattoeat end*/
    
-  /* d3 charts * /
- .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* d3 charts */
+    .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
 
-#my_datavis svg {
-  box-shadow: 1px 1px 3px 2px #555555;
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-  /* d3 charts * /
+   #my_datavis svg {
+     box-shadow: 1px 1px 3px 2px #555555;
+     margin: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+   }
+  /* d3 charts */
 }
 
 
@@ -1062,7 +1062,7 @@ p a:active {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
   }
   /* whattoeat end*/
-     /* d3 charts * /
+     /* d3 charts */
  .container {
   display: flex;
   justify-content: center;
@@ -1076,5 +1076,5 @@ p a:active {
   justify-content: center;
   align-items: center;  
 }
-  /* d3 charts * /
+  /* d3 charts */
 }
