@@ -557,7 +557,7 @@ d3.csv("https://raw.githubusercontent.com/zonination/perceptions/master/probly.c
      .call(d3.axisLeft(yName))
 
   var ytick = svg.selectAll(".yaxis").selectAll(".tick")
-  ytick.style("font-size", 8)  
+  ytick.style("font-size", 5)  
   ytick.on("mouseover", function(d) {
       myarea.attr("fill-opacity", .3)
       d3.select(this).attr("font-weight", "bold").style("color", "#51ff00")
