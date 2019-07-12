@@ -641,8 +641,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
   svg8.append("text")
      .attr("text-anchor", "end")
      .attr("x", width - 90)
-     .attr("y", height + 45)
-     .attr("font-size", 12)
+     .attr("y", height + 30)
+     .attr("font-size", 10)
      .text("GDP per capita")
   
   var y = d3.scaleLinear()
@@ -668,7 +668,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
      .attr("x", 0)
      .attr("y", -20)
      .text("Life Expectancy")
-     .attr("font-size", 12)  
+     .attr("font-size", 10)  
      .attr("text-anchor", "start")
   
   var z = d3.scaleSqrt()
