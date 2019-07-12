@@ -1,12 +1,12 @@
 /* Circle */
 var margin = {
-    top: 70,
-    bottom: 70,
-    left: 70,
-    right: 70
+    top: 50,
+    bottom: 50,
+    left: 50,
+    right: 50
   },
-  width = 400 - margin.left - margin.right,
-  height = 400 - margin.top - margin.bottom;
+  width = 380 - margin.left - margin.right,
+  height = 380 - margin.top - margin.bottom;
 
 var svg1 = d3
   .select("#my_datavis")
@@ -557,7 +557,7 @@ d3.csv("https://raw.githubusercontent.com/zonination/perceptions/master/probly.c
      .call(d3.axisLeft(yName))
 
   var ytick = svg.selectAll(".yaxis").selectAll(".tick")
-  
+  ytick.style("font-size", 8)  
   ytick.on("mouseover", function(d) {
       myarea.attr("fill-opacity", .3)
       d3.select(this).attr("font-weight", "bold").style("color", "#51ff00")
