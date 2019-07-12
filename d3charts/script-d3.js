@@ -74,16 +74,20 @@ d3.csv(
     svg2
       .append("g")
       .attr("transform", "translate(0," + height + ")")
+      .attr("class", "xaxis")
       .call(d3.axisBottom(x))
       .selectAll("text")
       .attr("transform", "translate(-10,0)rotate(-25)")
       .style("text-anchor", "end");
+    var xtick = svg2.selectAll(".xaxis").selectAll(".tick")
+    xtick.style("font-size", 5)
 
     var y = d3
       .scaleLinear()
       .domain([0, 13000])
       .range([height, 0]);
-    svg2.append("g").call(d3.axisLeft(y));
+    svg2.append("g").call(d3.axisLeft(y))
+
 
     svg2
       .selectAll("bar")
