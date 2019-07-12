@@ -1075,11 +1075,10 @@ p a:active {
 }
 
   #my_datavis {
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
-   }
-   
+    flex-wrap: wrap;
    
 #my_datavis svg {
   box-shadow: 1px 1px 3px 2px #555555;
