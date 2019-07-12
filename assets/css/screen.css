@@ -1083,7 +1083,7 @@ p a:active {
 #my_datavis svg {
   box-shadow: 1px 1px 3px 2px #555555;
   width: 80%;
-  height: 80%
+  height: 80%;
   margin: 30px;
   display: flex;
   justify-content: center;
