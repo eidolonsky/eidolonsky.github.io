@@ -799,3 +799,74 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
       .on("mouseleave", nohighlight)
 })  
 /* Bubble */
+
+/* Drag */
+var svg9 = d3
+  .select("#my_datavis")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/11_SevCatOneNumNestedOneObsPerGroup.csv", function(data) {
+    var colorArr =     ["#ff6b35","#fc8500","#ffb701","#023047","#03256c","#f7c59f","#efefd0","#1a659e","#003d5b","#30638e","#2299b4","#edae49","#d1495b","#ffb923","#f1e9db"]
+  var color = d3.scaleOrdinal()
+                .domain(["Asia", "Europe", "Africa", "Oceania", "Americas"])
+                .range(colorArr)
+  
+  var size = d3.scaleLinear()
+               .domain([0, 1400000000])
+               .range([2, 80])
+  var data1 = data.filter(function(d) { return d.value<1000000000})
+  var node = svg9.append("g")
+                .selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("class", function(d) { return "circles " + d.key })
+                .attr("r", function(d) { return size(d.value) })
+                .attr("cx", width / 2)
+                .attr("cy", height / 2)
+                .style("fill", function(d) { return color(d.subregion)})
+                .call(d3.drag()
+                        .on("start", dragstart)
+                        .on("drag", dragging)
+                        .on("end", dragend))
+  
+  var simulation = d3.forceSimulation()
+                     .force("forceX", d3.forceX().strength(.125).x(width / 2))
+                     .force("forceY", d3.forceY().strength(.125).y(width / 2)) 
+                     .force("center", d3.forceCenter()
+                                        .x(width / 2)
+                                        .y(height / 2))
+                     .force("charge", d3.forceManyBody()
+                                        .strength(-15))
+                     .force("collide", d3.forceCollide()
+                                         .strength(.5)
+                                         .radius(function(d) { return size(d.value) + 3 })
+                                         .iterations(1))
+  
+  simulation.nodes(data)
+            .on("tick", function(d) {
+    node.attr("cx", function(d) { return d.x})
+    node.attr("cy", function(d) { return d.y})
+  })
+  function dragstart(d) {
+    if (!d3.event.active) 
+      simulation.alphaTarget(.03).restart()
+      d.fx = d.x
+      d.fy = d.y
+  }
+  function dragging(d) {
+    d.fx = d3.event.x
+    d.fy = d3.event.y
+  }
+  function dragend(d) {
+    if (!d3.event.active)
+      simulation.alphaTarget(.03)
+    d.fx = null
+    d.fy = null
+  }
+})
+/* Drag */
