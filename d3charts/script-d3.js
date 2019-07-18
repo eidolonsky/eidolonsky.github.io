@@ -528,7 +528,7 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/d
 /* Arc */
 
 /* Ridgeline */
-var svg = d3
+var svg7 = d3
   .select("#my_datavis")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -543,7 +543,7 @@ d3.csv("https://raw.githubusercontent.com/zonination/perceptions/master/probly.c
   var x = d3.scaleLinear()
             .domain([-10, 140])
             .range([0, width])
-  svg.append("g")
+  svg7.append("g")
      .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x))
       .attr("class", "axis")
@@ -556,11 +556,11 @@ d3.csv("https://raw.githubusercontent.com/zonination/perceptions/master/probly.c
                 .domain(categories)
                 .range([0, height])
                 .paddingInner(1)
-  svg.append("g")
+  svg7.append("g")
      .attr("class", "yaxis")
      .call(d3.axisLeft(yName))
 
-  var ytick = svg.selectAll(".yaxis").selectAll(".tick")
+  var ytick = svg7.selectAll(".yaxis").selectAll(".tick")
   ytick.style("font-size", 5)  
   ytick.on("mouseover", function(d) {
       myarea.attr("fill-opacity", .3)
@@ -582,7 +582,7 @@ d3.csv("https://raw.githubusercontent.com/zonination/perceptions/master/probly.c
     allDensity.push({key:key, density:density})
   }
   
-  var myarea = svg.selectAll("areas")
+  var myarea = svg7.selectAll("areas")
     .data(allDensity)
     .enter()
     .append("path")
