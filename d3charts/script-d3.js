@@ -834,7 +834,6 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
                                   .radius(function(d) { return size(d.value) + 3 })
                                   .iterations(1))
               .alphaTarget(1)
-
   
   simulation.nodes(data)
             .on("tick", function(d) {
@@ -872,10 +871,11 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
       .on("start", dragstart)
       .on("drag", dragging)
       .on("end", dragend)) 
+    
   svg9.append("circle")
       .attr("class", "button")
       .attr("cx", 0)
-      .attr("cy", 0)
+      .attr("cy", -20)
       .attr("r", 7)
       .style("fill", "#FFFBBD")
       .style("stroke", "#E85F5C")
@@ -901,7 +901,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
   svg9.append("text")
       .attr("class", "switch")
       .attr("x", 14)
-      .attr("y", 0)
+      .attr("y", -20)
       .attr("alignment-baseline", "middle")
       .style("font-size", 10)  
       .text("Click to exclude China&India")
