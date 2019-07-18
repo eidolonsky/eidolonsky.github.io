@@ -801,5 +801,168 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
 /* Bubble */
 
 /* Drag */
+var svg9 = d3
+  .select("#my_datavis")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
+
+
+d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/11_SevCatOneNumNestedOneObsPerGroup.csv", function(data) {
+  var data1 = data
+  var data2 = data.filter(function(d) { return d.value<1000000000})
+  var colorArr = ["#2A9D8F", "#E9C46A", "#264653", "#F4A261", "#E76F51"]
+  var node
+  
+  var color = d3.scaleOrdinal()
+                .range(colorArr)
+                .domain(["Asia", "Europe", "Africa", "Oceania", "Americas"])
+  var size = d3.scaleLinear()
+               .domain([0, 1400000000])
+               .range([2, 80])
+  var simulation = d3.forceSimulation()
+              .force("forceX", d3.forceX().strength(.125).x(width / 2))
+              .force("forceY", d3.forceY().strength(.125).y(width / 2)) 
+              .force("center", d3.forceCenter()
+                                 .x(width / 2)
+                                 .y(height / 2))
+              .force("charge", d3.forceManyBody()
+                                 .strength(-18))
+              .force("collide", d3.forceCollide()
+                                  .strength(0.4)
+                                  .radius(function(d) { return size(d.value) + 3 })
+                                  .iterations(1))
+              .alphaTarget(1)
+
+  
+  simulation.nodes(data)
+            .on("tick", function(d) {
+    node.attr("cx", function(d) { return d.x})
+    node.attr("cy", function(d) { return d.y})
+  })
+  function dragstart(d) {
+    if (!d3.event.active) 
+      simulation.alphaTarget(.03).restart()
+      d.fx = d.x
+      d.fy = d.y
+  }
+  function dragging(d) {
+    d.fx = d3.event.x
+    d.fy = d3.event.y
+  }
+  function dragend(d) {
+    if (!d3.event.active)
+      simulation.alphaTarget(.03)
+    d.fx = null
+    d.fy = null
+  }  
+  
+  node = svg9.selectAll("circle")
+    .data(data)
+    .enter()
+    .append("circle")
+    .attr("class", function(d) { return "circles " + d.key})
+    .attr("r", function(d) { return size(d.value)})
+    .attr("cx", width / 2)
+    .attr("cy", height / 2)
+    .style("fill", function(d) { return color(d.subregion)})
+
+  node.call(d3.drag()
+      .on("start", dragstart)
+      .on("drag", dragging)
+      .on("end", dragend)) 
+  svg9.append("circle")
+      .attr("class", "button")
+      .attr("cx", 0)
+      .attr("cy", 0)
+      .attr("r", 7)
+      .style("fill", "#FFFBBD")
+      .style("stroke", "#E85F5C")
+      .style("stroke-width", 1.5)
+      .on("mouseover", function(d) {
+            svg9.select(".button")
+              .style("stroke-width", 3)   
+          })
+      .on("mouseleave", function(d) {
+            svg9.select(".button")
+              .style("fill", "#FFFBBD")
+              .style("stroke-width", 1.5)      
+          })
+      .on("mousedown", function(d) {
+            svg9.select(".button")
+              .style("fill", "#CA3C25")    
+          })
+      .on("mouseup", function(d) {
+            svg9.select(".button")
+              .style("fill", "#FFFBBD")    
+          })  
+      .on("click", update)
+  svg9.append("text")
+      .attr("class", "switch")
+      .attr("x", 14)
+      .attr("y", 0)
+      .attr("alignment-baseline", "middle")
+      .style("font-size", 10)  
+      .text("Click to exclude China&India")
+      .on("click", update)
+  
+  var tooltip = d3.select("#my_datavis")
+       .append("div")
+       .style("position", "absolute")
+       .style("z-index", "10")
+       .style("visibility", "hidden")
+       .style("background-color", "#000000")
+       .style("color", "#FFFFFF")
+       .style("padding", "5px")
+       .style("border", "solid")
+       .style("border-radius", "50px")
+       .style("padding", "20px")
+       .style("opacity", .75)
+       .attr("font-size", 5)
+        
+  svg9.selectAll(".circles")
+      .on("mouseover", function(d) {
+    tooltip.style("visibility", "visible")
+    d3.select(this).style("stroke", "#615A61").style("stroke-width", 5)
+  })
+      .on("mouseleave", function(d) {
+    tooltip.style("visibility", "hidden")
+    d3.select(this).style("stroke", "none")
+  })       
+      .on("mousemove", function(d) {
+    tooltip.html("<b>" + d.key + "</b>" + "<br>" + d.subregion + "<br>" + "Population: " + d.value)
+             .style("left", (event.pageX+5) + "px")
+             .style("top", (event.pageY+5) + "px")    
+  })      
+  
+  var i = 1
+  function update() {
+    if (i == 1) {
+      i = 2
+      svg9.selectAll(".switch").text("Click to include China&India")
+    } else {
+      i = 1
+      svg9.selectAll(".switch").text("Click to exclude China&India")
+    }
+    node = svg9.selectAll(".circles")
+               .data(eval("data" + i))
+    svg9.select(".China").remove()
+    svg9.select(".India").remove()
+    node.enter().append("circle").attr("r", 0)
+    node.transition()
+        .duration(200)
+        .attr("class", function(d) { return "circles " + d.key})
+        .attr("r", function(d) { return size(d.value)})
+        .style("fill", function(d) { return color(d.subregion)})
+    
+    simulation.nodes(eval("data" + i))
+            .on("tick", function(d) {
+      node.attr("cx", function(d) { return d.x})
+      node.attr("cy", function(d) { return d.y})
+    })
+  }
+})
 /* Drag */
