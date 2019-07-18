@@ -877,7 +877,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
   svg9.append("circle")
       .attr("class", "button")
       .attr("cx", 0)
-      .attr("cy", -15)
+      .attr("cy", 0)
       .attr("r", 7)
       .style("fill", "#FFFBBD")
       .style("stroke", "#E85F5C")
@@ -903,12 +903,41 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
   svg9.append("text")
       .attr("class", "switch")
       .attr("x", 14)
-      .attr("y", -15)
+      .attr("y", 0)
       .attr("alignment-baseline", "middle")
       .style("font-size", 10)  
-      .text("Click to include China&India")
+      .text("Click to exclude China&India")
       .on("click", update)
-
+  
+  var tooltip = d3.select("#my_datavis")
+       .append("div")
+       .style("position", "absolute")
+       .style("z-index", "10")
+       .style("visibility", "hidden")
+       .style("background-color", "#000000")
+       .style("color", "#FFFFFF")
+       .style("padding", "5px")
+       .style("border", "solid")
+       .style("border-radius", "50px")
+       .style("padding", "20px")
+       .style("opacity", .75)
+       .attr("font-size", 5)
+        
+  svg9.selectAll(".circles")
+      .on("mouseover", function(d) {
+    tooltip.style("visibility", "visible")
+    d3.select(this).style("stroke", "#615A61").style("stroke-width", 5)
+  })
+      .on("mouseleave", function(d) {
+    tooltip.style("visibility", "hidden")
+    d3.select(this).style("stroke", "none")
+  })       
+      .on("mousemove", function(d) {
+    tooltip.html("<b>" + d.key + "</b>" + "<br>" + d.subregion + "<br>" + "Population: " + d.value)
+             .style("left", (event.pageX+5) + "px")
+             .style("top", (event.pageY+5) + "px")    
+  })      
+  
   var i = 1
   function update() {
     if (i == 1) {
