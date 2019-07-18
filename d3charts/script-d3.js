@@ -60,7 +60,7 @@ var svg2 = d3
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv(
-  "/assets/data/d3chart/d3-2.csv",
+  "/assets/data/d3charts/d3-2.csv",
   function(data) {
     var x = d3
       .scaleBand()
@@ -183,7 +183,7 @@ var svg3 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("/assets/data/d3chart/d3-3.csv", function(data) {
+d3.csv("/assets/data/d3charts/d3-3.csv", function(data) {
   var dimensions = d3.keys(data[0]).filter(function(d) { return d != "Species" })
   
   var color = d3.scaleOrdinal()
@@ -266,7 +266,7 @@ var svg4 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("/assets/data/d3chart/d3-4.csv", function(data) {
+d3.csv("/assets/data/d3charts/d3-4.csv", function(data) {
   var keys = data.columns.slice(1)
   var x = d3.scaleLinear()
             .domain(d3.extent(data, function(d) { return d.year; }))
@@ -348,7 +348,7 @@ var svg5 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("/assets/data/d3chart/d3-5.csv", function(data) {
+d3.csv("/assets/data/d3charts/d3-5.csv", function(data) {
   
   var x = d3.scaleLinear()
          .domain([5, 18])
@@ -424,7 +424,7 @@ var svg6 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("/assets/data/d3chart/d3-6.json", function(data) {
+d3.json("/assets/data/d3charts/d3-6.json", function(data) {
   var allNodes = data.nodes.map(function(d) { return d.name })
   
   var x = d3.scalePoint()
@@ -536,7 +536,7 @@ var svg7 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left*1.5 + "," + margin.top*1.5 + ")");
 
-d3.csv("/assets/data/d3chart/d3-7.csv", function(data) {
+d3.csv("/assets/data/d3charts/d3-7.csv", function(data) {
   var categories = data.columns
   var n = categories.length
   var color = ["#b0ebf8","#28c9ed","#023047","#ffb701","#fc8500","#03256c","#ff6b35","#f7c59f","#efefd0","#1a659e","#003d5b","#30638e","#2299b4","#edae49","#d1495b","#ffb923","#f1e9db"]
@@ -630,7 +630,7 @@ var svg8 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("/assets/data/d3chart/d3-8.csv", function(data) {
+d3.csv("/assets/data/d3charts/d3-8.csv", function(data) {
   var x = d3.scaleLinear()
             .domain([0, 45000])
             .range([0, width])
@@ -809,7 +809,7 @@ var svg9 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-d3.csv("/assets/data/d3chart/d3-9.csv", function(data) {
+d3.csv("/assets/data/d3charts/d3-9.csv", function(data) {
   var data1 = data
   var data2 = data.filter(function(d) { return d.value<1000000000})
   var colorArr = ["#2A9D8F", "#E9C46A", "#264653", "#F4A261", "#E76F51"]
