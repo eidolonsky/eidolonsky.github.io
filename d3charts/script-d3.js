@@ -809,12 +809,12 @@ var svg9 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-var colorArr = ["#2A9D8F", "#E9C46A", "#264653", "#F4A261", "#E76F51"]
+
 
 d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/11_SevCatOneNumNestedOneObsPerGroup.csv", function(data) {
   var data1 = data
   var data2 = data.filter(function(d) { return d.value<1000000000})
-  
+  var colorArr = ["#2A9D8F", "#E9C46A", "#264653", "#F4A261", "#E76F51"]
   var node
   
   var color = d3.scaleOrdinal()
