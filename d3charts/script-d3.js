@@ -724,6 +724,9 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
      .attr("class", function(d) { return "bubbles " + d.continent})
      .attr("cx", function(d) { return x(d.gdpPercap)})
      .attr("cy", function(d) { return y(d.lifeExp)})
+     .attr("r", 0)
+     .transition()
+     .duration(200)
      .attr("r", function(d) { return z(d.pop)})
      .style("fill", function(d) { return color(d.continent)})
      .style("stroke", "#ffffff")
@@ -808,8 +811,6 @@ var svg9 = d3
   .attr("height", height + margin.top + margin.bottom)
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-
-
 
 d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/11_SevCatOneNumNestedOneObsPerGroup.csv", function(data) {
   var data1 = data
