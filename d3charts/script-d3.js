@@ -1075,7 +1075,7 @@ var svg9 = d3
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv(
-  "https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/11_SevCatOneNumNestedOneObsPerGroup.csv",
+  "/assets/data/d3charts/s3-9.csv",
   function(data) {
     var data1 = data;
     var data2 = data.filter(function(d) {
