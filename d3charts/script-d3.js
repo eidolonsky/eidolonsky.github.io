@@ -2096,7 +2096,7 @@ d3.csv("/assets/data/d3charts/d3-9.csv", function(data) {
   }
 });
 /* Drag */
-
+var svg9 = d3
   .select("#my_datavis")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
