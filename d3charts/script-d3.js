@@ -1075,7 +1075,7 @@ var svg9 = d3
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv(
-  "/assets/data/d3charts/s3-9.csv",
+  "/assets/data/d3charts/d3-9.csv",
   function(data) {
     var data1 = data;
     var data2 = data.filter(function(d) {
