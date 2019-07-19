@@ -20,10 +20,10 @@ var ranColor = ["#3B1F2B", "#DB162F", "#DBDFAC", "#5F758E", "#383961"];
 var i, n, m;
 var data = [];
 for (i = 1; i < 6; i++) {
-  data.push(i * 4);
+  data.push(i * 3.5);
 }
-for (n = 15; n < 260; n = n + 50) {
-  for (m = 15; m < 260; m = m + 50) {
+for (n = 7; n < 280; n = n + 43) {
+  for (m = 7; m < 280; m = m + 43) {
     svg1
       .selectAll("myCircle")
       .data(data)
@@ -31,8 +31,8 @@ for (n = 15; n < 260; n = n + 50) {
       .append("circle")
       .transition()
       .duration(800)
-      .attr("cx", n + 15)
-      .attr("cy", m + 15)
+      .attr("cx", n + 6)
+      .attr("cy", m + 6)
       .attr("r", 0.01)
       .transition()
       .duration(1000)
