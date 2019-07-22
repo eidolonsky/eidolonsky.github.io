@@ -1312,7 +1312,7 @@ var filter = defs.append("filter").attr("id", "gooey");
 filter
   .append("feGaussianBlur")
   .attr("in", "SourceGraphic")
-  .attr("stdDeviation", "8")
+  .attr("stdDeviation", "5")
   .attr("result", "blur");
 filter
   .append("feColorMatrix")
