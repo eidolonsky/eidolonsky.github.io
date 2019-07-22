@@ -1296,3 +1296,84 @@ d3.csv(
   }
 );
 /* Drag */
+
+/* Gooey */
+var svg10 = d3
+.select("#my_datavis")
+.append("svg")
+.attr("width", width + margin.left + margin.right)
+.attr("height", height + margin.top + margin.bottom)
+.append("g")
+.style("filter", "url(#gooey)")
+.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var defs = svg10.append("defs");
+var filter = defs.append("filter").attr("id", "gooey");
+filter
+  .append("feGaussianBlur")
+  .attr("in", "SourceGraphic")
+  .attr("stdDeviation", "8")
+  .attr("result", "blur");
+filter
+  .append("feColorMatrix")
+  .attr("in", "blur")
+  .attr("mode", "matrix")
+  .attr("values", "1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7");
+
+var colorArr = [
+  "#E9C46A",
+  "#F4A261",
+  "#E76F51",
+  "#7EBDC2",
+  "#2A9D8F",
+  "#264653"
+];
+
+var position = [40, 80, 120, 160, 200, 240];
+
+svg10
+  .selectAll(".conCir")
+  .data(position)
+  .enter()
+  .append("circle")
+  .attr("class", "conCIr")
+  .attr("cx", function(d) {
+  return d;
+})
+  .attr("cy", 140)
+  .attr("r", 20)
+  .style("fill", function(d, i) {
+  return colorArr[i];
+});
+
+svg10
+  .selectAll(".circles")
+  .data(position)
+  .enter()
+  .append("circle")
+  .attr("class", "circles")
+  .attr("cx", function(d) {
+  return d;
+})
+  .attr("cy", 140)
+  .attr("r", 10)
+  .style("fill", function(d, i) {
+  return colorArr[i];
+})
+  .transition()
+  .duration(4000)
+  .attr("cy", 280)
+  .delay(function(i) {
+  return i * 10;
+})
+  .transition()
+  .on("start", function repeat() {
+  d3
+    .active(this)
+    .attr("cy", 280)
+    .transition()
+    .attr("cy", 0)
+    .transition()
+    .on("start", repeat);
+});
+/* Gooey */
