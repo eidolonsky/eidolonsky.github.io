@@ -1318,7 +1318,7 @@ filter
   .append("feColorMatrix")
   .attr("in", "blur")
   .attr("mode", "matrix")
-  .attr("values", "1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7");
+  .attr("values", "1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -10");
 
 var colorArr = [
   "#E9C46A",
@@ -1361,10 +1361,10 @@ svg10
   return colorArr[i];
 })
   .transition()
-  .duration(4000)
+  .duration(3500)
   .attr("cy", 280)
   .delay(function(i) {
-  return i * 10;
+  return i * 20;
 })
   .transition()
   .on("start", function repeat() {
