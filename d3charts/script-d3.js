@@ -1389,34 +1389,54 @@ var svg11 = d3
 .append("g")
 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
- function motion(x,y) {   
+svg11.append("rect")
+     .attr("x", 90)
+     .attr("y", 90)
+     .attr("width", 100)
+     .attr("height", 100)
+     .style("fill", "black")
+     .style("opacity", 0.9)
+
+function motion(x,y) {   
     var path = svg11
                .append("circle")
                .attr("cx", x)
                .attr("cy", y)
                .attr("r", 20)
                .style("fill", "none")
-               .style("stroke", "indigo")
-               .style("stroke-opacity", .1)
+               .style("stroke", "navajowhite")
+               .style("stroke-opacity", .2)
 
     var circle = svg11
                 .append("circle")
                 .attr("r", 5)
-                .style("fill", "tomato")
+                .attr("fill", "antiquewhite")
+                .style("fill", function(d) {
+                  if (x%2 != 0) {
+                      if (y%2 == 0) {
+                        return "tomato"
+                      } 
+                    } else if ( x%2 == 0) {
+                      if ( y%2 ==0 ) {
+                      return "mediumaquamarine"
+                      }  
+                    } 
+                  } 
+                )
                 .attr("transform", "translate(" + x + "," + (y - 20) + ")");
   
 transition()
 
 function transition() {
   circle.transition()
-        .delay(x)
+        .delay(x^1.9)
         .duration(10000)
         .attrTween("transform", translateAlong(path.node()))
         .on("end", transition)  
 }}
 
-for (var m = -50; m < 380; m = m + 25) {
-  for (var n = -50; n < 380; n = n + 25) {
+for (var m = 0; m < 280; m = m + 25) {
+  for (var n = 0; n < 280; n = n + 25) {
     motion(m, n)
   }
 }
