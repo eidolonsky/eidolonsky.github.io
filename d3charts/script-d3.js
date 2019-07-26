@@ -1421,8 +1421,8 @@ transition()
 
 function transition() {
   circle.transition()
-        .delay(x^1.9)
         .duration(10000)
+        .delay(x^1.6)
         .attrTween("transform", translateAlong(path.node()))
         .on("end", transition)  
 }}
