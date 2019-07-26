@@ -1379,3 +1379,55 @@ svg10
     .on("start", repeat);
 });
 /* Gooey */
+
+/* Motion */
+var svg11 = d3
+.select("#my_datavis")
+.append("svg")
+.attr("width", width + margin.left + margin.right)
+.attr("height", height + margin.top + margin.bottom)
+.append("g")
+.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+ function motion(x,y) {   
+    var path = svg11
+               .append("circle")
+               .attr("cx", x)
+               .attr("cy", y)
+               .attr("r", 20)
+               .style("fill", "none")
+               .style("stroke", "indigo")
+               .style("stroke-opacity", .1)
+
+    var circle = svg11
+                .append("circle")
+                .attr("r", 5)
+                .style("fill", "tomato")
+                .attr("transform", "translate(" + x + "," + (y - 20) + ")");
+  
+transition()
+
+function transition() {
+  circle.transition()
+        .delay(x)
+        .duration(10000)
+        .attrTween("transform", translateAlong(path.node()))
+        .on("end", transition)  
+}}
+
+for (var m = -50; m < 380; m = m + 25) {
+  for (var n = -50; n < 380; n = n + 25) {
+    motion(m, n)
+  }
+}
+
+function translateAlong(path) {
+  var l = path.getTotalLength() 
+  return function(d, i, a) {
+    return function(t) {
+          var p = path.getPointAtLength(t * l);
+          return "translate(" + p.x + "," + p.y + ")"
+    }
+  }
+}
+/* Motion */
