@@ -610,6 +610,13 @@ p a:active {
      align-items: center;  
    }
   /* d3 charts */
+   
+  /* Graphics */
+  .graphics img {
+    width: 8em;
+    height: 8em;
+  }   
+  /* Graphics */  
 }
 
 
@@ -1088,4 +1095,11 @@ p a:active {
      flex-wrap: wrap;
    }
   /* d3 charts */
+   
+  /* Graphics */
+  .graphics img {
+    width: 8em;
+    height: 8em;
+  }   
+  /* Graphics */     
 }
