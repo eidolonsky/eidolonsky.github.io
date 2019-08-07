@@ -849,7 +849,7 @@ var svg8 = d3
 
 d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/4_ThreeNum.csv", function(data) {
   var x = d3.scaleLinear()
-            .domain([0, 45000])
+            .domain([0, 48000])
             .range([0, width])
   var xAxis = svg8.append("g")
       .attr("transform", "translate(0, " + height + ")")
@@ -863,7 +863,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
      .text("GDP per capita")
   
   var y = d3.scaleLinear()
-            .domain([ 40, 80 ])
+            .domain([ 40, 85 ])
             .range([ height, 0 ])
   var yAxis = svg8.append("g")
       .call(d3.axisLeft(y))
@@ -1041,8 +1041,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
     
     if(!extent){
           if (!idleTimeout) return idleTimeout = setTimeout(idled, 1000);
-          x.domain([0,45000])
-          y.domain([40,80])
+          x.domain([0,48000])
+          y.domain([40,85])
         }else{
           x.domain([extent[0][0], extent[1][0]].map(x.invert, x));
           y.domain([extent[1][1], extent[0][1]].map(y.invert, y));
