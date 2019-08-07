@@ -847,7 +847,7 @@ var svg8 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/4_ThreeNum.csv", function(data) {
+d3.csv("/assets/data/d3charts/d3-8.csv", function(data) {
   var x = d3.scaleLinear()
             .domain([0, 48000])
             .range([0, width])
