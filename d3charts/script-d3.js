@@ -13,39 +13,41 @@ var svg1 = d3
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
+  .call(d3.zoom().scaleExtent([.4, 15]).on("zoom", function(){
+                    svg1.attr("transform", d3.event.transform)
+                    }))  
   .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
 var ranColor = ["#3B1F2B", "#DB162F", "#DBDFAC", "#5F758E", "#383961"];
 var i, n, m;
 var data = [];
 for (i = 1; i < 6; i++) {
-  data.push(i * 3.5);
+  data.push(i * 5);
 }
-for (n = 7; n < 280; n = n + 43) {
-  for (m = 7; m < 280; m = m + 43) {
+for (n = -600; n < 1000; n = n + 75) {
+  for (m = -600; m < 1000; m = m + 75) {
     svg1
       .selectAll("myCircle")
       .data(data)
       .enter()
       .append("circle")
-      .transition()
-      .duration(800)
       .attr("cx", n + 6)
       .attr("cy", m + 6)
-      .attr("r", 0.01)
+      .attr("r", 1)
       .transition()
-      .duration(1000)
+      .duration(2000)    
       .attr("r", function(d) {
         return d;
       })
+      .attr("stroke", "#FFFFFF")
       .attr("stroke", function(d) {
         return ranColor[Math.floor(Math.random() * ranColor.length)];
       })
       .attr("stroke-width", function(d) {
         return Math.random() * 3;
       })
-      .attr("fill", "none");
+      .style("fill", "none")
   }
 }
 /* Circle */
