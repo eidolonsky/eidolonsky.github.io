@@ -1377,86 +1377,19 @@ svg10
 });
 /* Gooey */
 
-/* Motion */
-var svg11 = d3
-  .select("#my_datavis")
-  .append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  .call(d3.zoom().scaleExtent([.4, 15]).on("zoom", function(){
-                    svg11.attr("transform", d3.event.transform)
-                    }))  
-  .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-
-function motion(x,y) {   
-    var path = svg11
-               .append("circle")
-               .attr("cx", x)
-               .attr("cy", y)
-               .attr("r", 30)
-               .style("fill", "none")
-               .style("stroke", "indigo")
-               .style("stroke-opacity", .1)
-
-    var circle = svg11
-                .append("circle")
-                .attr("r", 15)
-                .attr("fill", "midnightblue")
-                .style("fill", function(d) {
-                  if (x%2 != 0) {
-                      if (y%2 == 0) {
-                        return "tomato"
-                      } 
-                    } else if ( x%2 == 0) {
-                      if ( y%2 ==0 ) {
-                      return "mediumaquamarine"
-                      }  
-                    } 
-                  } 
-                )
-                .attr("transform", "translate(" + x + "," + (y - 20) + ")");
-  
-transition()
-
-function transition() {
-  circle.transition()
-        .duration(10000)
-        .delay(x^1.6)
-        .attrTween("transform", translateAlong(path.node()))
-        .on("end", transition)  
-}}
-
-for (var m = -50; m < 380; m = m + 55) {
-  for (var n = -50; n < 380; n = n + 55) {
-    motion(m, n)
-  }
-}
-
-function translateAlong(path) {
-  var l = path.getTotalLength() 
-  return function(d, i, a) {
-    return function(t) {
-          var p = path.getPointAtLength(t * l);
-          return "translate(" + p.x + "," + p.y + ")"
-    }
-  }
-}
-/* Motion */
-
 /* Blend Wave */
 var svg12 = d3
-    .select("#my_datavis")
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+.select("#my_datavis")
+.append("svg")
+.attr("width", width + margin.left + margin.right)
+.attr("height", height + margin.top + margin.bottom)
+.append("g")
+.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var colorArr = ["cyan", "magenta", "yellow"]
 
 var data = []
-for (var j=0;j<25;j++) {
+for (var j=0;j<15;j++) {
   data.push(j)
 }
 var path = svg12.selectAll("circles")
@@ -1464,21 +1397,20 @@ var path = svg12.selectAll("circles")
                   .enter()
                   .append("circle")
                   .attr("class", function(d, i) { return "path" + i })
-                  .attr("cx", function(d) { return d * 15})
-                  .attr("cy", function(d) { return d * 15})
+                  .attr("cx", function(d) { return d * 25})
+                  .attr("cy", function(d) { return d * 25})
                   .attr("r", 70)
                   .style("stroke", "black")
                   .style("fill", "none")
                   .style("opacity", 0.5)
-
 
 var dot = svg12.selectAll("circles")
                   .data(data)
                   .enter()
                   .append("circle")
                   .attr("class", function(d, i) { return "dot" + i })
-                  .attr("transform", function(d) { return "translate(" + d * 15 + "," + (d * 15 + 70) + ")"})
-                  .attr("r", 25)
+                  .attr("transform", function(d) { return "translate(" + d * 25 + 70 + "," + d * 25 + ")"})
+                  .attr("r", 30)
                   .style("fill", function(d, i) { if (i%3==0) {
                     return colorArr[0]
                   } else if (i%3==1) {
@@ -1488,7 +1420,6 @@ var dot = svg12.selectAll("circles")
                   }
                   })
                   .style("mix-blend-mode", "darken")
-
 
 function transition() {
   for (var i=0; i < 25; i++) {
