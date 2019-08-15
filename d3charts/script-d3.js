@@ -1379,26 +1379,29 @@ svg10
 
 /* Motion */
 var svg11 = d3
-.select("#my_datavis")
-.append("svg")
-.attr("width", width + margin.left + margin.right)
-.attr("height", height + margin.top + margin.bottom)
-.append("g")
-.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .select("#my_datavis")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .call(d3.zoom().scaleExtent([.4, 15]).on("zoom", function(){
+                    svg11.attr("transform", d3.event.transform)
+                    }))  
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
 function motion(x,y) {   
     var path = svg11
                .append("circle")
                .attr("cx", x)
                .attr("cy", y)
-               .attr("r", 20)
+               .attr("r", 30)
                .style("fill", "none")
                .style("stroke", "indigo")
                .style("stroke-opacity", .1)
 
     var circle = svg11
                 .append("circle")
-                .attr("r", 5)
+                .attr("r", 15)
                 .attr("fill", "midnightblue")
                 .style("fill", function(d) {
                   if (x%2 != 0) {
@@ -1424,8 +1427,8 @@ function transition() {
         .on("end", transition)  
 }}
 
-for (var m = 0; m < 280; m = m + 25) {
-  for (var n = 0; n < 280; n = n + 25) {
+for (var m = -50; m < 380; m = m + 55) {
+  for (var n = -50; n < 380; n = n + 55) {
     motion(m, n)
   }
 }
