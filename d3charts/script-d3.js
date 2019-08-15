@@ -1438,3 +1438,72 @@ function translateAlong(path) {
   }
 }
 /* Motion */
+
+/* Blend Wave */
+var svg12 = d3
+    .select("#my_datavis")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var colorArr = ["cyan", "magenta", "yellow"]
+
+var data = []
+for (var j=0;j<25;j++) {
+  data.push(j)
+}
+var path = svg12.selectAll("circles")
+                  .data(data)
+                  .enter()
+                  .append("circle")
+                  .attr("class", function(d, i) { return "path" + i })
+                  .attr("cx", function(d) { return d * 15})
+                  .attr("cy", function(d) { return d * 15})
+                  .attr("r", 70)
+                  .style("stroke", "black")
+                  .style("fill", "none")
+                  .style("opacity", 0.5)
+
+
+var dot = svg12.selectAll("circles")
+                  .data(data)
+                  .enter()
+                  .append("circle")
+                  .attr("class", function(d, i) { return "dot" + i })
+                  .attr("transform", function(d) { return "translate(" + d * 15 + "," + (d * 15 + 70) + ")"})
+                  .attr("r", 25)
+                  .style("fill", function(d, i) { if (i%3==0) {
+                    return colorArr[0]
+                  } else if (i%3==1) {
+                    return colorArr[1]
+                  } else {
+                    return colorArr[2]
+                  }
+                  })
+                  .style("mix-blend-mode", "darken")
+
+
+function transition() {
+  for (var i=0; i < 25; i++) {
+    d3.select(".dot" + i).transition()
+          .duration(8000)
+          .delay(( i + 1 )*100)
+          .attrTween("transform", translateAlong( d3.select(".path" + i).node()))
+          .on("end", transition)  
+  }
+}
+
+transition()
+
+function translateAlong(path) {
+  var l = path.getTotalLength() 
+  return function(d, i, a) {
+    return function(t) {
+          var p = path.getPointAtLength(t * l);
+          return "translate(" + p.x + "," + p.y + ")"
+    }
+  }
+}
+/* Blend Wave */
