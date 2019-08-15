@@ -1068,6 +1068,9 @@ var svg9 = d3
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
+  .call(d3.zoom().scaleExtent([.4, 15]).on("zoom", function(){
+                    svg9.attr("transform", d3.event.transform)
+                    }))  
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
