@@ -1392,7 +1392,7 @@ var svg12 = d3
 var colorArr = ["cyan", "magenta", "yellow"]
 
 var data = []
-for (var j=0;j<15;j++) {
+for (var j=0;j<3;j++) {
   data.push(j)
 }
 var path = svg12.selectAll("circles")
@@ -1400,8 +1400,8 @@ var path = svg12.selectAll("circles")
                   .enter()
                   .append("circle")
                   .attr("class", function(d, i) { return "path" + i })
-                  .attr("cx", function(d) { return d * 25})
-                  .attr("cy", function(d) { return d * 25})
+                  .attr("cx", function(d) { return d * 55+70})
+                  .attr("cy", function(d) { return d * 55+70})
                   .attr("r", 70)
                   .style("stroke", "black")
                   .style("fill", "none")
@@ -1413,7 +1413,7 @@ var dot = svg12.selectAll("circles")
                   .append("circle")
                   .attr("class", function(d, i) { return "dot" + i })
                   .attr("transform", function(d) { return "translate(" + d * 25 + 70 + "," + d * 25 + ")"})
-                  .attr("r", 30)
+                  .attr("r", 80)
                   .style("fill", function(d, i) { if (i%3==0) {
                     return colorArr[0]
                   } else if (i%3==1) {
