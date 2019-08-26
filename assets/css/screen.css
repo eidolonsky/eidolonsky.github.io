@@ -297,12 +297,7 @@ p a:active {
     font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
     text-decoration: none;
   }
-  
-  .graphics {
-    width: 12em;
-    height: 12em;
-   }
-   
+    
   .vizimg {
     width: 100%;
     height: 100%;   
@@ -821,11 +816,6 @@ p a:active {
     width: 100%;
     height: 100%;
   }   
-   
-  .graphics {
-    width: 12em;
-    height: 12em;
-   }
    
   .gallery {
     display: flex;
