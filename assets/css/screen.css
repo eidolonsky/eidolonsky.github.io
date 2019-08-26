@@ -257,7 +257,10 @@ p a:active {
     max-width: 50em;
   }
   .dv {
-    padding: 0.777em;
+    padding-left: 0.777em;
+    padding-right: 0.77em;
+    padding-top: 0.222em;
+    padding-bottom: 0.222em;
   }
   .pweb {
     padding: 2.777em;
