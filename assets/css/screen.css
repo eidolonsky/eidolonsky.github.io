@@ -777,6 +777,10 @@ p a:active {
     padding-top: 4em;
     padding-bottom: 4em; 
   }
+  .dv {
+    display: flex;
+    justify-content: center;
+   }
   .dv, .pweb {
     padding: 0.333em;
   }
