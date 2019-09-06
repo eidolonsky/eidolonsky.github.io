@@ -620,8 +620,8 @@ p a:active {
   }   
    
   .gdIntro {
-      margin: 5em;
-     padding: 3em;
+      margin: 2em;
+
    }   
   /* Graphics */  
 }
@@ -1113,8 +1113,8 @@ p a:active {
     height: 15em;
   }   
   .gdIntro {
-      margin: 3em;
-     padding: 2em;
+      margin: 0.555em;
+
    }      
   /* Graphics */     
 }
