@@ -618,6 +618,11 @@ p a:active {
     width: 18em;
     height: 18em;
   }   
+   
+  .gdIntro {
+      margin: 5em;
+     padding: 3em;
+   }   
   /* Graphics */  
 }
 
@@ -1107,5 +1112,9 @@ p a:active {
     width: 15em;
     height: 15em;
   }   
+  .gdIntro {
+      margin: 3em;
+     padding: 2em;
+   }      
   /* Graphics */     
 }
