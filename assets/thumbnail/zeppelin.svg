@@ -3,23 +3,23 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.05;fill:#FFFFFF;stroke:#231F20;stroke-miterlimit:10;}
-	.st1{fill:#7EC4EC;}
+	.st0{opacity:0.05;fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#7EC5ED;}
 	.st2{clip-path:url(#SVGID_2_);}
-	.st3{fill:#EFF8FD;}
-	.st4{fill:#D7EFF7;}
+	.st3{fill:#F0F9FE;}
+	.st4{fill:#D7EFF8;}
 	.st5{clip-path:url(#SVGID_4_);}
-	.st6{opacity:0.16;fill:#FFCF83;}
-	.st7{fill:#FFCF83;}
+	.st6{opacity:0.16;fill:#FFCF84;}
+	.st7{fill:#FFCF84;}
 	.st8{fill:#FFFFFF;}
 	.st9{fill:#D86551;}
 	.st10{clip-path:url(#SVGID_6_);fill:#664341;}
 	.st11{fill:#664341;}
 	.st12{clip-path:url(#SVGID_8_);fill:#664341;}
 	.st13{fill:#F6C163;}
-	.st14{fill:#F59079;}
-	.st15{fill:#C15142;}
-	.st16{fill:#E97B64;}
+	.st14{fill:#F69179;}
+	.st15{fill:#C25142;}
+	.st16{fill:#EA7B64;}
 	.st17{clip-path:url(#SVGID_10_);fill:#664341;}
 	.st18{opacity:0.45;}
 	.st19{fill:url(#SVGID_11_);}
@@ -177,14 +177,15 @@
 	<g class="st18">
 		<g>
 			<linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="14.3693" y1="309.3943" x2="588.0986" y2="309.3943">
-				<stop  offset="0" style="stop-color:#672F8F"/>
-				<stop  offset="0.034" style="stop-color:#713889"/>
-				<stop  offset="0.1863" style="stop-color:#9B5C71"/>
-				<stop  offset="0.3422" style="stop-color:#BD7A5D"/>
-				<stop  offset="0.4998" style="stop-color:#D8914E"/>
-				<stop  offset="0.6602" style="stop-color:#EBA243"/>
-				<stop  offset="0.8247" style="stop-color:#F6AC3C"/>
-				<stop  offset="1" style="stop-color:#FAAF3A"/>
+				<stop  offset="0" style="stop-color:#662F90"/>
+				<stop  offset="0.0754" style="stop-color:#7A4289"/>
+				<stop  offset="0.1997" style="stop-color:#975D80"/>
+				<stop  offset="0.3275" style="stop-color:#B37474"/>
+				<stop  offset="0.4563" style="stop-color:#CB8867"/>
+				<stop  offset="0.5867" style="stop-color:#DF9858"/>
+				<stop  offset="0.7192" style="stop-color:#EDA54A"/>
+				<stop  offset="0.8552" style="stop-color:#F7AD3F"/>
+				<stop  offset="1" style="stop-color:#FBB03A"/>
 			</linearGradient>
 			<path class="st19" d="M516.64,247.11c-54.99,2.34-64.34,10.51-87.92,14.73c-38.34-11.02-88.8-20.78-139.14-23.45
 				c-44.68-32.6-75.8-85.89-159.7-85.89c-59.04,0-115.52,42.15-115.51,101.16c-0.86,150.81,135.19,208.88,297.77,212.63
