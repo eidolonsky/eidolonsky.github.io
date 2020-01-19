@@ -1,5 +1,5 @@
 /* Cat */
-var svg17 = d3.selectAll("svg");
+var svg17 = d3.selectAll("#bouncingCat");
 
 svg17.selectAll(".st0").attr("fill", "SteelBlue");
 svg17.selectAll(".st1").attr("fill", "Navy");
