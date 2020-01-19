@@ -1498,3 +1498,81 @@ d3.selectAll("circle").transition()
             .on("start", repeat);
       });
 /* Color Transition */
+
+var svg17 = d3.selectAll("svg");
+
+svg17.selectAll(".st0").attr("fill", "SteelBlue");
+svg17.selectAll(".st1").attr("fill", "Navy");
+svg17.selectAll(".st2").attr("fill", "LightSteelBlue");
+
+// svg
+//   .append("circle")
+//   .attr("cx", 80)
+//   .attr("cy", 205)
+//   .attr("r", 1)
+//   .attr("fill", "red");
+
+// svg
+//   .append("circle")
+//   .attr("cx", 190)
+//   .attr("cy", 220)
+//   .attr("r", 1)
+//   .attr("fill", "red");
+
+var rotate_1 = d3.interpolateString(
+    "rotate(0, 80, 205)",
+    "rotate(-50, 80, 205)"
+  ),
+  rotate_2 = d3.interpolateString("rotate(-50, 80, 205)", "rotate(0, 80, 205)"),
+  rotate_3 = d3.interpolateString(
+    "rotate(0, 190, 220)",
+    "rotate(-50, 190, 220)"
+  ),
+  rotate_4 = d3.interpolateString(
+    "rotate(-50, 190, 220)",
+    "rotate(0, 190, 220)"
+  );
+
+function animateRun() {
+  svg17
+    .select("#leftFoot")
+    .transition()
+    .duration(1000)
+    .attrTween("transform", function(d, i, a) {
+      return rotate_1;
+    })
+    .transition()
+    .duration(1000)
+    .attrTween("transform", function(d, i, a) {
+      return rotate_2;
+    })
+    .on("end", animateRun);
+
+  svg17
+    .select("#rightFoot")
+    .transition()
+    .duration(1000)
+    .attrTween("transform", function(d, i, a) {
+      return rotate_4;
+    })
+    .transition()
+    .duration(1000)
+    .attrTween("transform", function(d, i, a) {
+      return rotate_3;
+    })
+    .on("end", animateRun);
+
+  svg17
+    .select("#cat")
+    .transition()
+    .ease(d3.easeCircle)
+    .duration(1000)
+    .attr("transform", "translate(0, 30)")
+    .transition()
+    .ease(d3.easeCircle)
+    .duration(1000)
+    .attr("transform", "translate(0, 0)")
+    .on("end", animateRun);
+}
+
+animateRun();
