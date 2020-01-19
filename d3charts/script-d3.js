@@ -20,17 +20,17 @@ svg17.selectAll(".st2").attr("fill", "LightSteelBlue");
 //   .attr("fill", "red");
 
 var rotate_1 = d3.interpolateString(
-    "rotate(0, 80, 205)",
-    "rotate(-50, 80, 205)"
+    "rotate(0, 115, 260)",
+    "rotate(-50, 115, 260)"
   ),
-  rotate_2 = d3.interpolateString("rotate(-50, 80, 205)", "rotate(0, 80, 205)"),
+  rotate_2 = d3.interpolateString("rotate(-50, 115, 260)", "rotate(0, 115, 260)"),
   rotate_3 = d3.interpolateString(
-    "rotate(0, 190, 220)",
-    "rotate(-50, 190, 220)"
+    "rotate(0, 240, 280)",
+    "rotate(-50, 240, 280)"
   ),
   rotate_4 = d3.interpolateString(
-    "rotate(-50, 190, 220)",
-    "rotate(0, 190, 220)"
+    "rotate(-50, 240, 280)",
+    "rotate(0, 240, 280)"
   );
 
 function animateRun() {
@@ -74,7 +74,6 @@ function animateRun() {
     .attr("transform", "translate(0, 0)")
     .on("end", animateRun);
 }
-
 animateRun();
 
 /* Circle */
