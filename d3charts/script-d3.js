@@ -1,21 +1,68 @@
 /* Cat */
 var svg17 = d3.selectAll("#bouncingCat");
 
-svg17.selectAll(".st0").attr("fill", "SteelBlue");
-svg17.selectAll(".st1").attr("fill", "Navy");
-svg17.selectAll(".st2").attr("fill", "LightSteelBlue");
+var data = ["RUN","TOGGLE"];
 
-// svg
+svg17.selectAll(".rects")
+     .data(data)
+     .enter()
+     .append("rect")
+     .attr("id", function(d) { return d + "button"})
+     .attr("class", "switch")
+     .attr("x", function(d, i) { return i * (280 / 3 + 50) + 280 / 3 })
+     .attr("y", 15)
+     .attr("width", 50)
+     .attr("height", 25)
+     .attr("fill", "Gainsboro")
+
+svg17.selectAll(".texts")
+     .data(data)
+     .enter()
+     .append("text")
+     .attr("id", function(d) { return d })
+     .attr("class", "switchTxt")
+     .attr("x", function(d, i) { return i * (280 / 3 + 50) + 280 / 3 +25})
+     .attr("y", 27.5)
+     .attr("font-family", "Arial")
+     .attr("font-weight", "bold")
+     .attr("fill", "black")
+     .attr("font-size", 8)
+     .attr("text-anchor", "middle")
+     .attr("alignment-baseline", "middle")
+     .text(function(d) { return d })
+
+svg17.select("#RUN")
+     .on("click", animateRun)
+svg17.select("#RUNbutton")
+     .on("click", animateRun)
+
+svg17.select("#TOGGLE")
+     .on("click", toggleColor)
+svg17.select("#TOGGLEbutton")
+     .on("click", toggleColor)
+
+var st0 = svg17.selectAll(".st0").attr("fill", "SteelBlue");
+var st1 = svg17.selectAll(".st1").attr("fill", "Navy");
+var st2 = svg17.selectAll(".st2").attr("fill", "LightSteelBlue");
+
+// svg17
 //   .append("circle")
-//   .attr("cx", 80)
-//   .attr("cy", 205)
+//   .attr("cx", 115)
+//   .attr("cy", 260)
 //   .attr("r", 1)
 //   .attr("fill", "red");
 
-// svg
+// svg17
 //   .append("circle")
-//   .attr("cx", 190)
-//   .attr("cy", 220)
+//   .attr("cx", 240)
+//   .attr("cy", 280)
+//   .attr("r", 1)
+//   .attr("fill", "red");
+
+// svg17
+//   .append("circle")
+//   .attr("cx", 300)
+//   .attr("cy", 240)
 //   .attr("r", 1)
 //   .attr("fill", "red");
 
@@ -23,7 +70,9 @@ var rotate_1 = d3.interpolateString(
     "rotate(0, 115, 260)",
     "rotate(-50, 115, 260)"
   ),
-  rotate_2 = d3.interpolateString("rotate(-50, 115, 260)", "rotate(0, 115, 260)"),
+  rotate_2 = d3.interpolateString(
+    "rotate(-50, 115, 260)", 
+    "rotate(0, 115, 260)"),
   rotate_3 = d3.interpolateString(
     "rotate(0, 240, 280)",
     "rotate(-50, 240, 280)"
@@ -31,7 +80,15 @@ var rotate_1 = d3.interpolateString(
   rotate_4 = d3.interpolateString(
     "rotate(-50, 240, 280)",
     "rotate(0, 240, 280)"
-  );
+  ),
+  rotate_5 = d3.interpolateString(
+    "rotate(10, 300, 240)",
+    "rotate(0, 300, 240)"
+  ),
+  rotate_6 = d3.interpolateString(
+    "rotate(0, 300, 240)",
+    "rotate(10, 300, 240)"
+  );    
 
 function animateRun() {
   svg17
@@ -61,7 +118,21 @@ function animateRun() {
       return rotate_3;
     })
     .on("end", animateRun);
-
+  
+  svg17
+    .select("#tail")
+    .transition()
+    .duration(1000)
+    .attrTween("transform", function(d, i, a) {
+      return rotate_5;
+    })
+    .transition()
+    .duration(1000)
+    .attrTween("transform", function(d, i, a) {
+      return rotate_6;
+    })
+    .on("end", animateRun);
+  
   svg17
     .select("#cat")
     .transition()
@@ -74,7 +145,20 @@ function animateRun() {
     .attr("transform", "translate(0, 0)")
     .on("end", animateRun);
 }
-animateRun();
+
+function toggleColor() {
+   st0.attr("fill", st0.attr("fill") === "SteelBlue" ? "LightSalmon" : "SteelBlue");
+   st1.attr("fill", st1.attr("fill") === "Navy" ? "FireBrick" : "Navy");
+   st2.attr("fill", st2.attr("fill") === "LightSteelBlue" ? "Salmon" : "LightSteelBlue");
+}
+
+var switchs = svg17.selectAll(".switch")
+var texts = svg17.selectAll(".switchTxt")     
+switchs
+  .on("mouseover", function() { d3.select(this).attr("fill", "Silver") })
+  .on("mousedown", function() { d3.select(this).attr("fill", "LightSlateGray") })
+  .on("mouseup", function() { d3.select(this).attr("fill", "Silver")})  
+  .on("mouseout", function() { d3.select(this).attr("fill", "Gainsboro") })
 
 /* Circle */
 var margin = {
