@@ -1,6 +1,33 @@
+// Cubination
+
 /* Cat */
 var svg17 = d3.selectAll("#bouncingCat");
+var svg18 = d3.selectAll("#cubination")
+var st0 = d3.selectAll(".st0").attr("fill", "#92A9FD").attr("stroke", "#92A9FD").attr("stroke-width", ".5px")
+var st1 = d3.selectAll(".st1").attr("fill", "#BCDCFF").attr("stroke", "#BCDCFF").attr("stroke-width", ".5px")
+var st2 = d3.selectAll(".st2").attr("fill", "#9CC3FF").attr("stroke", "#9CC3FF").attr("stroke-width", ".5px")
+var st3 = d3.selectAll(".st3").attr("fill", "#3399FF").attr("stroke", "#3399FF").attr("stroke-width", ".5px")
 
+function moveUp0(){
+  var t = 500;   
+  for (var i = 0; i < 9; i++){
+    svg18
+    .select("#c" + (i + 1))
+    .transition() 
+    .delay(i*t/9)
+    .duration(t)
+    .attr("transform", "translate(0, -50)")
+    .transition()
+    .duration(t)
+    .attr("transform", "translate(0, 50)")    
+    .transition()
+    .duration(t)
+    .attr("transform", "translate(0, 0)")
+    .on("end", function(){ if(i=8){ moveUp0()} })
+  }    
+}
+
+moveUp0()
 var data = ["RUN","TOGGLE"];
 
 svg17.selectAll(".rects")
