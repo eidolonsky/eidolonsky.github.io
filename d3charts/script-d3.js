@@ -21,6 +21,9 @@ function moveUp0(){
     .transition()
     .duration(t)
     .attr("transform", "translate(0, 0)")
+    .transition()
+    .duration(t*2)
+    .attr("transform", "translate(0, 0)")    
     .on("end", function(){ if(i=8){ moveUp0()} })
   }    
 }
