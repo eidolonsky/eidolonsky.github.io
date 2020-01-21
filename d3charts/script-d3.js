@@ -22,7 +22,7 @@ function moveUp0(){
     .duration(t)
     .attr("transform", "translate(0, 0)")
     .transition()
-    .duration(t*2)
+    .duration(t*3)
     .attr("transform", "translate(0, 0)")    
     .on("end", function(){ if(i=8){ moveUp0()} })
   }    
