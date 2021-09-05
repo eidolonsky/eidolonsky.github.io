@@ -1,9 +1,84 @@
-/*scss colors&fonts */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   /* Base Style */
   margin: 0;
   padding: 0;
@@ -14,7 +89,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+img {
   display: block;
 }
 
@@ -23,17 +109,21 @@ body {
   position: relative;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -45,8 +135,8 @@ table {
 /* Custom site styles */
 /* text */
 body {
-  color: #46494C;
-  background-color: #DCDCDD;
+  color: #46494c;
+  background-color: #dcdcdd;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.2em;
   line-height: 1.44em;
@@ -59,7 +149,7 @@ p {
 }
 
 h1 {
-  color: #202C39;
+  color: #202c39;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.44em;
   line-height: 1.2em;
@@ -67,7 +157,7 @@ h1 {
 }
 
 h2 {
-  color: #202C39;
+  color: #202c39;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.5em;
   line-height: 1.2em;
@@ -75,7 +165,7 @@ h2 {
 }
 
 h3 {
-  color: #202C39;
+  color: #202c39;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 1.44em;
   line-height: 1.728em;
@@ -83,22 +173,22 @@ h3 {
 
 /* links in p setting */
 p a:link {
-  color: #202C39;
+  color: #202c39;
   text-decoration: none;
 }
 
 p a:visited {
-  color: #202C39;
+  color: #202c39;
   text-decoration: none;
 }
 
 p a:hover {
-  color: #46494C;
+  color: #46494c;
   text-decoration: none;
 }
 
 p a:active {
-  color: #46494C;
+  color: #46494c;
   text-decoration: none;
 }
 
@@ -119,7 +209,7 @@ p a:active {
   }
   ul.topnav li a {
     display: inline-block;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     padding: 0.75em 0.5em;
     text-decoration: none;
@@ -129,8 +219,12 @@ p a:active {
   .current {
     background-color: #222222;
   }
-  ul.topnav li a:hover {background-color: #555;}
-  ul.topnav li.icon {display: none;}
+  ul.topnav li a:hover {
+    background-color: #555;
+  }
+  ul.topnav li.icon {
+    display: none;
+  }
   /* nav end */
   /* bottombar start */
   .bottombar {
@@ -147,7 +241,7 @@ p a:active {
   }
   .copyright {
     padding: 1.333em;
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-size: 1.111em;
   }
@@ -261,7 +355,7 @@ p a:active {
   .pweb {
     padding: 2.777em;
   }
-  .myworks a img{
+  .myworks a img {
     width: 12em;
     height: 12em;
   }
@@ -274,33 +368,41 @@ p a:active {
 
   figure figcaption {
     padding-top: 0.333em;
-    padding-bottom: 0.777em; 
+    padding-bottom: 0.777em;
     text-align: center;
   }
   .myworks a:link {
-    color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+    color: #0c0c0c;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+      "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",
+      "sans serif";
     text-decoration: none;
   }
   .myworks a:visited {
-    color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
+    color: #0c0c0c;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+      "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",
+      "sans serif";
     text-decoration: none;
   }
   .myworks a:hover {
-    color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
+    color: #0c0c0c;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+      "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",
+      "sans serif";
     text-decoration: none;
   }
   .myworks a:active {
-    color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
+    color: #0c0c0c;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+      "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",
+      "sans serif";
     text-decoration: none;
   }
-    
+
   .vizimg {
     width: 100%;
-    height: 100%;   
+    height: 100%;
   }
   .vizimg img {
     width: 100%;
@@ -316,7 +418,7 @@ p a:active {
   .gallery {
     width: 75%;
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
   }
   .gallery img {
     height: auto;
@@ -352,19 +454,19 @@ p a:active {
     padding-bottom: 2.333em;
   }
   .message a:link {
-    color: #202C39;
+    color: #202c39;
     text-decoration: underline;
   }
   .message a:visited {
-    color: #202C39;
+    color: #202c39;
     text-decoration: none;
   }
   .message a:hover {
-    color: #46494C;
+    color: #46494c;
     text-decoration: none;
   }
   .message a:active {
-    color: #46494C;
+    color: #46494c;
     text-decoration: none;
   }
   .icons {
@@ -383,7 +485,7 @@ p a:active {
     height: 1.75em;
     opacity: 0.75;
   }
-  
+
   /* The Modal (background) */
   .modal {
     display: none;
@@ -402,11 +504,11 @@ p a:active {
     position: relative;
     padding: 0;
     width: 100%;
-    height: 100%;  
+    height: 100%;
   }
 
   /* The Close Button */
-  .close  {
+  .close {
     width: 1.5em;
     position: absolute;
     top: 10px;
@@ -414,7 +516,7 @@ p a:active {
     z-index: 5;
     opacity: 0.5;
     transition: 0.6s ease;
-    padding: 16px;    
+    padding: 16px;
   }
   .close img {
     width: 1.5em;
@@ -422,7 +524,7 @@ p a:active {
   .close:hover,
   .close:focus {
     cursor: pointer;
-    opacity: 1;    
+    opacity: 1;
   }
 
   .mySlides {
@@ -432,7 +534,10 @@ p a:active {
   }
   .mySlides img {
     position: absolute;
-    top: 0; bottom:0; left: 0; right:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     height: 95%;
     width: auto;
@@ -475,13 +580,13 @@ p a:active {
   }
 
   img.hover-shadow {
-    transition: 0.3s
+    transition: 0.3s;
   }
   .hover-shadow {
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 1), 0 2px 5px 0 rgba(0, 0, 0, 1)
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 1), 0 2px 5px 0 rgba(0, 0, 0, 1);
   }
   .hover-shadow:hover {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1), 0 3px 10px 0 rgba(0, 0, 0, 1)
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1), 0 3px 10px 0 rgba(0, 0, 0, 1);
   }
   /* Contact end */
   /* Blog start */
@@ -492,19 +597,19 @@ p a:active {
     padding-top: 2.333em;
   }
   #blog a:link {
-    color: #0C0C0C;
+    color: #0c0c0c;
     text-decoration: none;
   }
   #blog a:visited {
-    color: #0C0C0C;
+    color: #0c0c0c;
     text-decoration: none;
   }
   #blog a:hover {
-    color: #0C0C0C;
+    color: #0c0c0c;
     text-decoration: none;
   }
   #blog a:active {
-    color: #0C0C0C;
+    color: #0c0c0c;
     text-decoration: none;
   }
   #blog img {
@@ -560,7 +665,7 @@ p a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;     
+    height: 60vh;
   }
   .centerwork {
     padding-bottom: 2.5em;
@@ -570,83 +675,63 @@ p a:active {
     align-items: center;
   }
   .foodresult {
-    position:absolute;
+    position: absolute;
     font-size: 2em;
-    color: #08605F;
+    color: #08605f;
   }
   .foodbutton {
     border: none;
     width: 4.5em;
     height: 1.5em;
     font-size: 1.5em;
-    color: #FFFFFF;
-    background-color: #7EBC89;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color: #ffffff;
+    background-color: #7ebc89;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   }
   .foodbutton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
 
-
   /* whattoeat end*/
-   
+
   /* d3 charts */
-    .container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   #my_datavis {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #my_datavis {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   }
-   #my_datavis svg {
-     box-shadow: 1px 1px 3px 2px #555555;
-     margin: 30px;
-     display: flex;
-     justify-content: center;
-     align-items: center;  
-   }
+  }
+  #my_datavis svg {
+    box-shadow: 1px 1px 3px 2px #555555;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /* d3 charts */
-   
+
   /* Graphics */
   .graphics img {
     width: 18em;
     height: 18em;
-  }   
-   
-  .gdIntro {
-      margin: 2em;
+  }
 
-   }   
-  /* Graphics */  
+  .gdIntro {
+    margin: 2em;
+  }
+  /* Graphics */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 35em) { 
+@media screen and (max-width: 35em) {
   .brief {
     display: none;
-  }  
+  }
   /* nav start */
   ul.topnav {
     list-style-type: none;
@@ -656,20 +741,26 @@ p a:active {
     background-color: #000000;
   }
   ul.topnav li a {
-      display: inline-block;
-      color: #f2f2f2;
-      text-align: center;
-      text-decoration: none;
-      transition: 0.3s;
-      padding: 14px 16px;
-      font-size: 17px;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 14px 16px;
+    font-size: 17px;
   }
-  ul.topnav li {float: left;}
-  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li {
+    float: left;
+  }
+  ul.topnav li:not(:first-child) {
+    display: none;
+  }
   ul.topnav li.icon {
     float: right;
   }
-  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive {
+    position: relative;
+  }
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
@@ -776,54 +867,63 @@ p a:active {
     align-items: center;
     flex-wrap: wrap;
     padding-top: 4em;
-    padding-bottom: 4em; 
+    padding-bottom: 4em;
   }
   .dv {
     display: flex;
     justify-content: center;
-   }
-  .dv, .pweb {
+  }
+  .dv,
+  .pweb {
     padding: 0.333em;
   }
-  .myworks a img{
+  .myworks a img {
     width: 12em;
     height: 12em;
-  }  
+  }
   figure figcaption {
     padding-top: 0.333em;
-    padding-bottom: 0.777em; 
+    padding-bottom: 0.777em;
     text-align: center;
   }
   .myworks a:link {
-    color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
-    text-decoration: none;  
+    color: #0c0c0c;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+      "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",
+      "sans serif";
+    text-decoration: none;
   }
   .myworks a:visited {
-    color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
+    color: #0c0c0c;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+      "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",
+      "sans serif";
     text-decoration: none;
   }
   .myworks a:hover {
-    color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
+    color: #0c0c0c;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+      "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",
+      "sans serif";
     text-decoration: none;
   }
   .myworks a:active {
-    color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
+    color: #0c0c0c;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+      "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black",
+      "sans serif";
     text-decoration: none;
-  }  
+  }
 
   .vizimg {
     width: 100%;
-    height: 100%;   
+    height: 100%;
   }
   .vizimg img {
     width: 100%;
     height: 100%;
-  }   
-   
+  }
+
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -856,7 +956,7 @@ p a:active {
 
     padding: 0;
     width: 100%;
-    height: 100%;  
+    height: 100%;
   }
 
   /* The Close Button */
@@ -885,7 +985,10 @@ p a:active {
   }
   .mySlides img {
     position: absolute;
-    top: 0; bottom:0; left: 0; right:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     width: 100%;
     height: auto;
@@ -902,7 +1005,7 @@ p a:active {
     user-select: none;
     -webkit-user-select: none;
     z-index: 5;
-    opacity: 0.5;    
+    opacity: 0.5;
   }
   .prev img,
   .next img {
@@ -913,7 +1016,7 @@ p a:active {
     right: 0;
   }
   .hover-shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1), 0 3px 10px 0 rgba(0, 0, 0, 1)
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1), 0 3px 10px 0 rgba(0, 0, 0, 1);
   }
 
   img.demo {
@@ -947,19 +1050,19 @@ p a:active {
     padding-bottom: 2.333em;
   }
   .message a:link {
-    color: #202C39;
+    color: #202c39;
     text-decoration: underline;
   }
   .message a:visited {
-    color: #202C39;
+    color: #202c39;
     text-decoration: none;
   }
   .message a:hover {
-    color: #46494C;
+    color: #46494c;
     text-decoration: none;
   }
   .message a:active {
-    color: #46494C;
+    color: #46494c;
     text-decoration: none;
   }
   .icons {
@@ -980,19 +1083,19 @@ p a:active {
     overflow: hidden;
   }
   #blog a:link {
-    color: #0C0C0C;
+    color: #0c0c0c;
     text-decoration: none;
   }
   #blog a:visited {
-    color: #0C0C0C;
+    color: #0c0c0c;
     text-decoration: none;
   }
   #blog a:hover {
-    color: #0C0C0C;
+    color: #0c0c0c;
     text-decoration: none;
   }
   #blog a:active {
-    color: #0C0C0C;
+    color: #0c0c0c;
     text-decoration: none;
   }
   #blog img {
@@ -1040,11 +1143,11 @@ p a:active {
   }
   .copyright {
     padding: 1em;
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-size: 0.777em;
   }
-  /* bottombar end */  
+  /* bottombar end */
   /* whattoeat start*/
   .seekfoods {
     padding-top: 5em;
@@ -1052,7 +1155,7 @@ p a:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
   }
   .seekfoods img {
     width: 20em;
@@ -1069,48 +1172,47 @@ p a:active {
   .foodresult {
     position: absolute;
     font-size: 1.5em;
-    color: #08605F;
+    color: #08605f;
   }
-  .foodbutton { 
+  .foodbutton {
     border: none;
     width: 4.5em;
     height: 1.5em;
     font-size: 1.5em;
-    color: #FFFFFF;
-    background-color: #7EBC89;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color: #ffffff;
+    background-color: #7ebc89;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   }
   /* whattoeat end*/
   /* d3 charts */
-   .container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   #my_datavis {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-       align-items: center;  
-   }
-   #my_datavis svg {
-     box-shadow: 1px 1px 3px 2px #555555;
-     margin: 30px;
-     display: flex;
-     justify-content: center;
-     align-items: center;  
-     flex-wrap: wrap;
-   }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #my_datavis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #my_datavis svg {
+    box-shadow: 1px 1px 3px 2px #555555;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   /* d3 charts */
-   
+
   /* Graphics */
   .graphics img {
     width: 15em;
     height: 15em;
-  }   
+  }
   .gdIntro {
-      margin: 0.555em;
-
-   }      
-  /* Graphics */     
+    margin: 0.555em;
+  }
+  /* Graphics */
 }
