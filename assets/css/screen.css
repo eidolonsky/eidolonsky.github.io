@@ -195,7 +195,6 @@ p a:active {
     display: flex;
     justify-content: center;
     padding-right: 1.777em;
-    padding-top: 1em;
     padding-bottom: 1em;
   }
   .clocks svg {
@@ -239,7 +238,6 @@ p a:active {
     padding-right: 3.554em;
     padding-left: 1.777em;
     margin-right: 6em;
-    padding-bottom: 1.777em;
   }
   .p1 p {
     max-width: 30.333em;
@@ -739,7 +737,6 @@ p a:active {
     justify-content: center;
     padding-right: 0.333em;
     padding-bottom: 0.333em;
-    padding-top: 0.666em;
   }
   .thumb {
     position: relative;
