@@ -279,22 +279,22 @@ p a:active {
   }
   .myworks a:link {
     color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    text-decoration: none;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
     text-decoration: none;
   }
   .myworks a:visited {
     color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
     text-decoration: none;
   }
   .myworks a:hover {
     color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
     text-decoration: none;
   }
   .myworks a:active {
     color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
     text-decoration: none;
   }
     
@@ -668,7 +668,6 @@ p a:active {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
     float: right;
-    display: inline-block;
   }
   ul.topnav.responsive {position: relative;}
   ul.topnav.responsive li.icon {
@@ -797,22 +796,22 @@ p a:active {
   }
   .myworks a:link {
     color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    text-decoration: none;
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
     text-decoration: none;  
   }
   .myworks a:visited {
     color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
     text-decoration: none;
   }
   .myworks a:hover {
     color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
     text-decoration: none;
   }
   .myworks a:active {
     color: #0C0C0C;
-    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif"    
+    font-family: Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";    
     text-decoration: none;
   }  
 
