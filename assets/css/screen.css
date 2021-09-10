@@ -663,7 +663,10 @@ p a:active {
     float: left;
   }
   ul.topnav li:not(:first-child) {
-/* display: none; */
+display: none;
+  }
+  ul.topnav li:last-child {
+display: block; 
   }
   ul.topnav li.icon {
     float: right;
